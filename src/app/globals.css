@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: white;
+  background-image: url("./images/magic.png");
+  background-size: cover;
+  background-position: center;
 }

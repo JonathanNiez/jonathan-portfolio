@@ -59,8 +59,8 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex justify-between items-center w-full h-20 mb-24 px-4
-      bg-blue-200 text-white fixed transition-all duration-300 shadow-md ${
+      className={`flex justify-between items-center w-full h-20 sticky top-0 px-4
+      bg-blue-200 text-white transition-all duration-300 shadow-md ${
         scrollDirection === "down" && scrollPosition > 100
           ? "transform translate-y-[-80px]"
           : "transform translate-y-0"
