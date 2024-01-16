@@ -12,6 +12,8 @@ import UnityLogo from "./images/unity_logo.png";
 import GodotLogo from "./images/godot_logo.png";
 import RenPyLogo from "./images/renpy_logo.png";
 import PhilippinesFlag from "./images/philippines_flag.png";
+import NoAILogo from "./images/no_ai.jpg";
+import GithubLogo from "./images/Github_Logo.png";
 import { FaJava } from "react-icons/fa";
 import { SiKotlin } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
@@ -122,13 +124,20 @@ export default function Home() {
   ];
 
   return (
-    <div className="mx-auto my-auto">
-      <div className="flex flex-col bg-black bg-opacity-60 mx-10 my-5 h-40 py-2 px-3 rounded-lg shadow-lg">
-        <p className="text-white text-3xl">
-          Hola! I'm Jonathan
-          <Image width={50} src={PhilippinesFlag} />
+    <div className="container">
+      <div className="container mx-auto flex flex-col md:justify-start md:items-start sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center bg-black bg-opacity-60 my-5 h-auto py-2 px-3 rounded-lg shadow-lg slide-in-top">
+        <p className="text-white md:text-2xl sm:text-lg max-sm:text-lg">
+          Hello, I'm Jonathan
         </p>
-        <div className="flex flex-row">
+        <hr className="h-0.5 w-52 bg-white border-0" />
+        <div className="flex justify-center items-center">
+          <Image
+            className="w-10"
+            src={PhilippinesFlag}
+            alt="Philippines Flag"
+          />
+        </div>
+        <div className="flex md:flex-row sm:flex-col max-sm:flex-col">
           <Link
             href=""
             className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
@@ -137,34 +146,44 @@ export default function Home() {
           </Link>
           <Link
             href="/contact"
-            className="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            className="jello-horizontal text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             Contact Me
           </Link>
         </div>
+        <div className="flex flex-row bg-white p-2 rounded-full shadow-md gap-3">
+          <a
+            href="https://github.com/JonathanNiez"
+            target="_blank"
+            className="font-medium hover:scale-105 transform transition-transform"
+          >
+            {" "}
+            <Image className="w-10" src={GithubLogo} />
+          </a>
+        </div>
       </div>
 
-      <div className="w-auto bg-blue-400 shadow-md rounded-md py-5 px-3">
+      <div className="container mx-auto bg-blue-400 shadow-md rounded-md py-5 px-3">
         <div className="flex flex-row justify-center items-center m-1">
-          <h2 className="text-gray-800 text-4xl text-center font-medium py-5">
+          <h2 className="text-gray-800 md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium py-5 scale-in-ver-bottom">
             Skills
           </h2>
         </div>
 
-        <div className="flex flex-row justify-center items-center my-5 bg-white shadow-lg rounded-lg py-5">
+        <div className="container mx-auto flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center my-5 gap-3 bg-white shadow-lg rounded-lg py-5">
           <Image
-            className="rounded-lg shadow-lg"
+            className="rounded-lg shadow-lg swing-in-right-fwd"
             src={TPoseJonathan}
             width={250}
           />
-          <GiSkills size={50} />
-          <div className="max-w-md">
+          <div className="max-w-md swing-in-left-fwd">
+            <GiSkills size={50} />
             <p className="font-medium">Full-stack Developer</p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center px-4 gap-3">
-          <div className="w-full bg-orange-300 flex flex-row justify-center items-center gap-3 rounded-lg shadow-lg py-4">
+        <div className="container flex flex-col justify-center items-center px-4 gap-3">
+          <div className="container bg-orange-300 flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
             <div>
               <Image width={250} src={ProgrammingIcon} alt="programming icon" />
             </div>
@@ -183,7 +202,7 @@ export default function Home() {
                     isLearning,
                   }) => (
                     <div
-                      className="grid grid-cols-3 gap-2 bg-yellow-300 px-5 py-3 rounded-lg shadow-lg m-2"
+                      className="grid grid-cols-3 gap-2 bg-yellow-300 hover:scale-105 transform transition-transform px-5 py-3 rounded-lg shadow-lg m-2"
                       key={id}
                     >
                       <div className="font-medium flex flex-row items-center">
@@ -205,7 +224,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-full bg-green-300 flex flex-row justify-center items-center gap-3 rounded-lg shadow-lg py-4">
+          <div className="container bg-green-300 flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
             <div>
               <p className="text-center text-gray-800 font-medium text-xl py-2">
                 Frameworks and Developments
@@ -214,7 +233,7 @@ export default function Home() {
                 {developmentSkills.map(
                   ({ id, developmentName, icon, skillLevel, isLearning }) => (
                     <div
-                      className="grid grid-cols-3 gap-2 bg-lime-300 px-5 py-3 rounded-lg shadow-lg m-2"
+                      className="grid grid-cols-3 gap-2 hover:scale-105 transform transition-transform bg-lime-300 px-5 py-3 rounded-lg shadow-lg m-2"
                       key={id}
                     >
                       <div className="font-medium flex flex-row items-center">
@@ -235,50 +254,75 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <Image width={250} src={DevelopmentIcon} alt="development icon" />
+              <Image
+                src={DevelopmentIcon}
+                alt="development icon"
+                className="md:w-60 sm:w-32 max-sm:w-32"
+              />
             </div>
           </div>
 
-          <div className="w-full bg-cyan-300 flex flex-row justify-center items-center gap-3 rounded-lg shadow-lg py-4">
+          <div className="container bg-cyan-300 flex md:flex-row sm:flex-col-reverse max-sm:flex-col-reverse justify-center items-center gap-3 rounded-lg shadow-lg py-4">
             <Image
-              width={250}
               src={PhotoshopIcon}
               alt="adobe photoshop icon"
-              className="shadow-md rounded-lg"
+              className="shadow-md rounded-lg md:w-60 sm:w-32 max-sm:w-32"
             />
             <p className="text-gray-800 font-medium text-xl py-2">
               Photo Editing
             </p>
           </div>
 
-          <div className="w-full bg-purple-300 flex flex-row justify-center items-center gap-3  rounded-lg shadow-lg py-4">
+          <div className="container bg-purple-300 flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
             <p className="text-gray-800 font-medium text-xl py-2">
               Video Editing
             </p>
             <Image
-              width={250}
               src={PremiereProIcon}
               alt="abode premiere pro icon"
-              className="shadow-md rounded-lg"
+              className="shadow-md rounded-lg md:w-60 sm:w-32 max-sm:w-32"
             />
             <Image
-              width={250}
               src={FilmoraIcon}
               alt="filmora icon"
-              className="shadow-md rounded-lg"
+              className="shadow-md rounded-lg md:w-60 sm:w-32 max-sm:w-32"
             />
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto my-10 bg-white bg-opacity-60 shadow-lg rounded-lg py-4">
-        <p className="text-center text-black font-medium text-4xl my-3">
+      <div className="container mx-auto flex flex-col items-center bg-white rounded-lg shadow-lg py-3 my-5">
+        <Image className="md:w-64 sm:w-32 max-sm:w-32" src={NoAILogo} />
+        <p className="text-black font-black">I don't use any AI works</p>
+      </div>
+
+      <div className="container mx-auto my-5 bg-white bg-opacity-60 shadow-lg rounded-lg py-4">
+        <p className="text-center text-black font-medium md:text-3xl sm:text-xl my-3">
           Currently learning Game Development...
         </p>
-        <div className="flex flex-row justify-center items-center gap-4">
-          <Image width={250} src={UnityLogo} />
-          <Image width={250} src={GodotLogo} />
-          <Image width={200} src={RenPyLogo} />
+        <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-4 pw-4">
+          <a
+            href="https://unity.com"
+            target="_blank"
+            className="hover:scale-105 transform transition-transform"
+          >
+            <Image className="md:w-60 sm:w-28 max-sm:w-32" src={UnityLogo} />
+          </a>
+          <a
+            href="https://godotengine.org"
+            target="_blank"
+            className="hover:scale-105 transform transition-transform"
+          >
+            <Image className="md:w-60 sm:w-36 max-sm:w-36" src={GodotLogo} />
+          </a>
+
+          <a
+            href="https://www.renpy.org"
+            target="_blank"
+            className="hover:scale-105 transform transition-transform"
+          >
+            <Image className="md:w-44 sm:w-24 max-sm:w-24" src={RenPyLogo} />
+          </a>
         </div>
       </div>
     </div>

@@ -60,13 +60,13 @@ export default function Navbar() {
   return (
     <div
       className={`flex justify-between items-center w-full h-20 sticky top-0 px-4
-      bg-blue-200 text-white transition-all duration-300 shadow-md ${
+      bg-blue-300 text-white transition-all duration-300 shadow-md ${
         scrollDirection === "down" && scrollPosition > 100
           ? "transform translate-y-[-80px]"
           : "transform translate-y-0"
       }`}
+      style={{ zIndex: 1000 }}
     >
-      {" "}
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-5xl text-black font-signature ml-2">
@@ -84,10 +84,14 @@ export default function Navbar() {
         {links.map(({ id, link, title }) => (
           <li
             key={id}
-            className="nav-links px-4 cursor-pointer capitalize font-medium text-gray-600 hover:scale-105 hover:text-gray-400 duration-200 link-underline"
+            className={`nav-links px-4 cursor-pointer capitalize font-medium  hover:scale-105 hover:font-black hover:bg-blue-400 duration-200 link-underline`}
           >
             <Link
-              className={`link ${pathname === "/" ? "active" : ""}`}
+              className={
+                router.pathname === link
+                  ? "text-blue-500 bg-white"
+                  : "text-gray-700"
+              }
               href={link}
             >
               {title}
@@ -102,14 +106,18 @@ export default function Navbar() {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-          {links.map(({ id, link }) => (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen default-bg">
+          {links.map(({ id, link, title }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-4 py-6 cursor-pointer capitalize text-white text-3xl font-medium "
             >
-              <Link onClick={() => setNav(!nav)} href={link}>
-                {link}
+              <Link
+                className="drop-shadow"
+                onClick={() => setNav(!nav)}
+                href={link}
+              >
+                {title}
               </Link>
             </li>
           ))}
