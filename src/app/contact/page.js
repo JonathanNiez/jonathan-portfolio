@@ -10,7 +10,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <div className="container">
-      <div className="bg-white flex flex-col items-center justify-between my-5 py-3 px-4 rounded-lg shadow-lg">
+      <div className="bg-white flex flex-col items-center justify-between my-5 py-3 px-4 sm:mx-2 max-sm:mx-2 rounded-lg shadow-lg">
         <p className="mb-5 font-medium">Get in touch with me</p>
         <div className="bg-white flex flex-row items-center justify-center gap-4">
           <a
@@ -19,7 +19,7 @@ export default function Contact() {
             className="font-medium hover:scale-105 transform transition-transform"
           >
             {" "}
-            <Image className="w-16" src={FacebookLogo} />
+            <Image className="md:w-16 sm:w-10 max-sm:w-10" src={FacebookLogo} />
           </a>
           <a
             href="#"
@@ -27,7 +27,7 @@ export default function Contact() {
             className="font-medium hover:scale-105 transform transition-transform"
           >
             {" "}
-            <Image className="w-16" src={GmailLogo} />
+            <Image className="md:w-16 sm:w-10 max-sm:w-10" src={GmailLogo} />
           </a>
           <a
             href="#"
@@ -35,7 +35,7 @@ export default function Contact() {
             className="font-medium hover:scale-105 transform transition-transform"
           >
             {" "}
-            <Image className="w-16" src={WhatsAppLogo} />
+            <Image className="md:w-16 sm:w-10 max-sm:w-10" src={WhatsAppLogo} />
           </a>
         </div>
       </div>
