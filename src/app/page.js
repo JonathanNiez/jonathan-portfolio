@@ -124,8 +124,8 @@ export default function Home() {
   ];
 
   return (
-    <div className="container">
-      <div className="container mx-auto flex flex-col md:justify-start md:items-start sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center bg-black bg-opacity-60 my-5 h-auto py-2 px-3 rounded-lg shadow-lg slide-in-top">
+    <div className="container mx-auto">
+      <div className="flex flex-col md:justify-start md:items-start sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center bg-black bg-opacity-60 my-5 h-auto py-2 px-3 my-5rounded-lg shadow-lg slide-in-top">
         <p className="text-white text-2xl font-medium sm:text-lg max-sm:text-lg">
           Hello, I'm Jonathan
         </p>
@@ -157,7 +157,6 @@ export default function Home() {
             target="_blank"
             className="font-medium hover:scale-105 transform transition-transform"
           >
-            {" "}
             <Image className="w-10" src={GithubLogo} />
           </a>
         </div>
@@ -165,9 +164,9 @@ export default function Home() {
 
       <div className="container mx-auto bg-blue-400 shadow-md rounded-md py-5 px-3">
         <div className="flex flex-row justify-center items-center m-1">
-          <h2 className="wobble-hor-bottom text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium py-5 scale-in-ver-bottom">
+          <p className="wobble-hor-bottom text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium py-5 scale-in-ver-bottom">
             Skills
-          </h2>
+          </p>
         </div>
 
         <div className="container mx-auto flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center my-5 gap-3 bg-white shadow-lg rounded-lg py-5">
@@ -298,6 +297,14 @@ export default function Home() {
       <div className="container mx-auto flex flex-col items-center bg-white rounded-lg shadow-lg py-3 my-5">
         <Image className="md:w-64 sm:w-32 max-sm:w-32" src={NoAILogo} />
         <p className="text-black font-black">I don't use any AI works</p>
+      </div>
+
+      <div className="container mx-auto bg-blue-400 shadow-md rounded-md py-5 px-3">
+        <div className="flex flex-col">
+          <p className="wobble-hor-bottom text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium py-5 scale-in-ver-bottom">
+            Experiences
+          </p>
+        </div>
       </div>
 
       <div className="container mx-auto my-5 bg-white bg-opacity-60 shadow-lg rounded-lg py-4">

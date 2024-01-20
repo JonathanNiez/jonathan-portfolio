@@ -1,13 +1,15 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import FacebookLogo from "../images/Facebook_Logo.png";
 import GmailLogo from "../images/Gmail_Logo.png";
 import WhatsAppLogo from "../images/WhatsApp_Logo.png";
 
-export const metadata = {
-  title: "Contact | Jonathan Niez",
-};
-
 export default function Contact() {
+  useEffect(() => {
+    document.title = "About | Jonathan Niez";
+  });
+
   return (
     <div className="container">
       <div className="bg-white flex flex-col items-center justify-between my-5 py-3 px-4 sm:mx-2 max-sm:mx-2 rounded-lg shadow-lg">

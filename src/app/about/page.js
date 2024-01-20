@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FiRefreshCcw } from "react-icons/fi";
 import TailwindCSSLogo from "../images/TailwindCSS_Logo.png";
@@ -8,10 +8,6 @@ import Certificate1 from "../images/certificates/Sweep_Network_on_Cloud.png";
 import Certificate2 from "../images/certificates/Sweep_The_Agile_Mindset.png";
 import Certificate3 from "../images/certificates/Sweep_Data_Visualization_Part_1.png";
 import Certificate4 from "../images/certificates/Sweep_Data_Visualization_Part_2.png";
-
-// export const metadata = {
-//   title: "About | Jonathan Niez",
-// };
 
 export default function About() {
   const [zoomStates, setZoomStates] = useState({});
@@ -22,6 +18,10 @@ export default function About() {
       [id]: !prevZoomStates[id],
     }));
   };
+
+  useEffect(() => {
+    document.title = "About | Jonathan Niez";
+  });
 
   const certificates = [
     {
@@ -44,11 +44,13 @@ export default function About() {
 
   return (
     <div className="container mx-auto">
-      <div className="flex flex-row gap-2 justify-center items-center my-5 sm:mx-2 max-sm:mx-2">
-        <div className="flex flex-col gap-4 text-white drop-shadow-md">
-          <div className="slide-in-top bg-black bg-opacity-60 rounded-lg shadow-lg py-2 px-3">
-            <p className="text-2xl font-medium">About Myself</p>
-          </div>
+      <div className="slide-in-top bg-black bg-opacity-60 rounded-lg shadow-lg py-2 px-3 my-5 text-white drop-shadow-md">
+        <p className="text-2xl sm:texl-xl max-sm:text-xl font-medium">
+          About Myself
+        </p>
+      </div>
+      <div className="grid grid-cols-3 gap-2 justify-items-stretch my-5 sm:mx-2 max-sm:mx-2">
+        <div className="col-span-2 flex flex-col gap-4 text-white drop-shadow-md">
           <div className="bg-blue-400 shadow-md rounded-md py-2 px-3">
             <p className="slide-in-right text-3xl sm:texl-xl max-sm:text-xl font-bold ">
               Hello, I am Jonathan A. Niez Jr.
@@ -64,8 +66,7 @@ export default function About() {
 
         <div className="flex flex-col justify-center items-center gap-2">
           <Image
-            width={700}
-            className="object-contain rounded-lg shadow-md scale-in-center"
+            className=" sm:w-60 max-sm:w-60 rounded-lg shadow-md"
             src={Jonathan}
             alt="Jonathan"
           />
