@@ -125,7 +125,10 @@ export default function Home() {
 
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col md:justify-start md:items-start sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center bg-black bg-opacity-60 my-5 h-auto py-2 px-3 my-5rounded-lg shadow-lg slide-in-top">
+      <div
+        className="flex flex-col md:justify-start md:items-start sm:justify-center 
+      sm:items-center max-sm:justify-center max-sm:items-center bg-black bg-opacity-60 my-5 h-auto py-2 px-3 rounded-lg shadow-lg slide-in-top"
+      >
         <p className="text-white text-2xl font-medium sm:text-lg max-sm:text-lg">
           Hello, I'm Jonathan
         </p>

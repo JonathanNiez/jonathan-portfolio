@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { FiRefreshCcw } from "react-icons/fi";
 import TailwindCSSLogo from "../images/TailwindCSS_Logo.png";
@@ -8,6 +8,7 @@ import Certificate1 from "../images/certificates/Sweep_Network_on_Cloud.png";
 import Certificate2 from "../images/certificates/Sweep_The_Agile_Mindset.png";
 import Certificate3 from "../images/certificates/Sweep_Data_Visualization_Part_1.png";
 import Certificate4 from "../images/certificates/Sweep_Data_Visualization_Part_2.png";
+import { NextSeo } from "next-seo";
 
 export default function About() {
   const [zoomStates, setZoomStates] = useState({});
@@ -18,10 +19,6 @@ export default function About() {
       [id]: !prevZoomStates[id],
     }));
   };
-
-  useEffect(() => {
-    document.title = "About | Jonathan Niez";
-  });
 
   const certificates = [
     {
@@ -43,7 +40,8 @@ export default function About() {
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="w-full mx-auto">
+      <NextSeo title="About | Jonathan Niez" />
       <div className="slide-in-top bg-black bg-opacity-60 rounded-lg shadow-lg py-2 px-3 my-5 text-white drop-shadow-md">
         <p className="text-2xl sm:texl-xl max-sm:text-xl font-medium">
           About Myself
