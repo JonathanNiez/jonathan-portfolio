@@ -7,10 +7,6 @@ import WhatsAppLogo from "../images/WhatsApp_Logo.png";
 import { NextSeo } from "next-seo";
 
 export default function Contact() {
-  useEffect(() => {
-    document.title = "About | Jonathan Niez";
-  });
-
   return (
     <div className="container">
       <NextSeo title="Contact | Jonathan Niez" />

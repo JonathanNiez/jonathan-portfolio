@@ -49,15 +49,20 @@ export default function About() {
       </div>
       <div className="grid grid-cols-3 gap-2 justify-items-stretch my-5 sm:mx-2 max-sm:mx-2">
         <div className="col-span-2 flex flex-col gap-4 text-white drop-shadow-md">
-          <div className="bg-blue-400 shadow-md rounded-md py-2 px-3">
+          <div className="flex flex-col gap-2 bg-blue-400 shadow-md rounded-md py-2 px-3">
             <p className="slide-in-right text-3xl sm:texl-xl max-sm:text-xl font-bold ">
               Hello, I am Jonathan A. Niez Jr.
             </p>
             <p className="slide-in-left font-medium text-lg sm:text-md max-sm:text-md ">
               I am a 21 year old Programmer/Developer, I build websites, android
-              development and edit photos and videos. I have experience few
-              programming languages and web frameworks such as ReactJS, NextJS,
-              Javascript, CSS, Java, Kotlin, Python, C++ and C#.
+              both front-end and back-end development and edit photos and
+              videos. I have experience few programming languages and web
+              frameworks such as ReactJS, NextJS, Javascript, CSS, Java, Kotlin,
+              Python, C++ and C#.
+            </p>
+            <p className="slide-in-left font-medium text-lg sm:text-md max-sm:text-md ">
+              I can adapt, flexible and willing to learn new programming
+              languages or frameworks to expand my knowledge.
             </p>
           </div>
         </div>

@@ -38,6 +38,9 @@ export default function Footer() {
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-800">
           © 2024 Jonathan Niez . All Rights Reserved.
         </span>
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-800">
+          To God be the Glory
+        </span>
       </div>
     </footer>
   );

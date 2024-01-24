@@ -15,7 +15,7 @@ import PhilippinesFlag from "./images/philippines_flag.png";
 import NoAILogo from "./images/no_ai.jpg";
 import GithubLogo from "./images/Github_Logo.png";
 import { FaJava } from "react-icons/fa";
-import { SiKotlin } from "react-icons/si";
+import { SiKotlin, SiNextdotjs } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiCsharp } from "react-icons/si";
@@ -24,8 +24,26 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa";
 import { IoLogoAndroid } from "react-icons/io";
 import { FaReact } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
+import {
+  TbBrandKotlin,
+  TbBrandNextjs,
+  TbBrandReactNative,
+} from "react-icons/tb";
 import { SiSvelte } from "react-icons/si";
+import { PiFileSql } from "react-icons/pi";
+import { FaHtml5 } from "react-icons/fa";
+import { SiAndroidstudio } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobepremierepro } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { SiBlazor } from "react-icons/si";
+import { DiVisualstudio } from "react-icons/di";
+import { FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+import { DiDjango } from "react-icons/di";
+import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
 export const metadata = {
@@ -36,103 +54,149 @@ export default function Home() {
   const codingSkills = [
     {
       id: 1,
-      programmingLanguage: "Java",
-      icon: <FaJava size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: true,
+      experiences: "Java",
+      icon: <FaJava size={35} />,
     },
     {
       id: 2,
-      programmingLanguage: "Kotlin",
-      icon: <SiKotlin size={25} />,
-      skillLevel: "Beginner",
-      isLearning: true,
+      experiences: "Kotlin",
+      icon: <TbBrandKotlin size={35} />,
     },
     {
       id: 3,
-      programmingLanguage: "Python",
-      icon: <FaPython size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: true,
+      experiences: "Python",
+      icon: <FaPython size={35} />,
     },
     {
       id: 4,
-      programmingLanguage: "Javascript",
-      icon: <IoLogoJavascript size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: false,
+      experiences: "Javascript",
+      icon: <IoLogoJavascript size={35} />,
     },
     {
       id: 5,
-      programmingLanguage: "C#",
-      icon: <SiCsharp size={25} />,
-      skillLevel: "Beginner",
-      isLearning: false,
+      experiences: "C#",
+      icon: <SiCsharp size={35} />,
     },
     {
       id: 6,
-      programmingLanguage: "C++",
-      icon: <SiCplusplus size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: false,
+      experiences: "C++",
+      icon: <SiCplusplus size={35} />,
     },
     {
       id: 7,
-      programmingLanguage: "CSS",
-      icon: <FaCss3Alt size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: true,
+      experiences: "CSS",
+      icon: <FaCss3Alt size={35} />,
     },
     {
       id: 8,
-      programmingLanguage: "PHP",
-      icon: <FaPhp size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: false,
+      experiences: "HTML",
+      icon: <FaHtml5 size={35} />,
+    },
+    {
+      id: 9,
+      experiences: "PHP",
+      icon: <FaPhp size={35} />,
+    },
+    {
+      id: 10,
+      experiences: "SQL",
+      icon: <PiFileSql size={35} />,
+    },
+    {
+      id: 11,
+      experiences: "Tailwind CSS",
+      icon: <SiTailwindcss size={35} />,
+    },
+    {
+      id: 12,
+      experiences: "Bootstrap",
+      icon: <FaBootstrap size={35} />,
+    },
+    {
+      id: 13,
+      experiences: "Android",
+      icon: <IoLogoAndroid size={35} />,
+    },
+    {
+      id: 14,
+      experiences: "ReactJS",
+      icon: <FaReact size={35} />,
+    },
+    {
+      id: 15,
+      experiences: "NextJS",
+      icon: <TbBrandNextjs size={35} />,
+    },
+    {
+      id: 16,
+      experiences: "Svelte",
+      icon: <SiSvelte size={35} />,
+    },
+    {
+      id: 17,
+      experiences: "Blazor",
+      icon: <SiBlazor size={35} />,
+    },
+    {
+      id: 18,
+      experiences: "React Native",
+      icon: <TbBrandReactNative size={35} />,
+    },
+    {
+      id: 19,
+      experiences: "Git",
+      icon: <FaGitAlt size={35} />,
+    },
+    {
+      id: 20,
+      experiences: "Github",
+      icon: <FaGithub size={35} />,
+    },
+    {
+      id: 21,
+      experiences: "Firebase",
+      icon: <IoLogoFirebase size={35} />,
+    },
+    {
+      id: 22,
+      experiences: "Django",
+      icon: <DiDjango size={35} />,
+    },
+    {
+      id: 23,
+      experiences: "Android Studio",
+      icon: <SiAndroidstudio size={35} />,
     },
   ];
 
-  const developmentSkills = [
+  const developmentTools = [
     {
       id: 1,
-      developmentName: "Android App",
-      icon: <IoLogoAndroid size={25} />,
-      skillLevel: "Advanced",
-      isLearning: true,
+      experiences: "Photoshop",
+      icon: <SiAdobephotoshop size={35} />,
     },
     {
       id: 2,
-      developmentName: "ReactJS",
-      icon: <FaReact size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: false,
+      experiences: "Premiere Pro",
+      icon: <SiAdobepremierepro size={35} />,
     },
     {
       id: 3,
-      developmentName: "NextJS",
-      icon: <TbBrandNextjs size={25} />,
-      skillLevel: "Intermediate",
-      isLearning: true,
-    },
-    {
-      id: 4,
-      developmentName: "Svelte",
-      icon: <SiSvelte size={25} />,
-      skillLevel: "Beginner",
-      isLearning: true,
+      experiences: "Figma",
+      icon: <FaFigma size={35} />,
     },
   ];
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-5">
       <div
         className="flex flex-col md:justify-start md:items-start sm:justify-center 
       sm:items-center max-sm:justify-center max-sm:items-center bg-black bg-opacity-60 my-5 h-auto py-2 px-3 rounded-lg shadow-lg slide-in-top"
       >
-        <p className="text-white text-2xl font-medium sm:text-lg max-sm:text-lg">
+        <p className="text-white md:text-3xl font-medium sm:text-xl max-sm:text-xl">
           Hello, I'm Jonathan
         </p>
-        <hr className="h-0.5 w-52 bg-white border-0" />
+        <hr className="h-0.5 w-64 bg-white border-0" />
         <div className="flex justify-center items-center">
           <Image
             className="w-10"
@@ -165,148 +229,91 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto bg-blue-400 shadow-md rounded-md py-5 px-3">
-        <div className="flex flex-row justify-center items-center m-1">
-          <p className="wobble-hor-bottom text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium py-5 scale-in-ver-bottom">
-            Skills
-          </p>
-        </div>
-
-        <div className="container mx-auto flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center my-5 gap-3 bg-white shadow-lg rounded-lg py-5">
+      <div className="container mx-auto flex flex-col gap-3">
+        <div className="container mx-auto flex md:flex-row sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center my-5 gap-3 bg-white shadow-lg rounded-lg py-5">
           <Image
-            className="rounded-lg shadow-lg swing-in-right-fwd"
+            className="rounded-lg shadow-lg swing-in-right-fwd md:w-52 sm:w-30 max-sm:w-30"
             src={TPoseJonathan}
-            width={250}
           />
           <div className="max-w-md swing-in-left-fwd">
             <GiSkills size={50} />
-            <p className="font-medium">Full-stack Developer</p>
+            <p className="font-medium text-lg">Full-stack Developer</p>
           </div>
         </div>
 
-        <div className="container flex flex-col justify-center items-center px-4 gap-3">
-          <div className="container bg-orange-300 flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
-            <div>
-              <Image
-                src={ProgrammingIcon}
-                alt="programming icon"
-                className="md:w-60 sm:w-32 max-sm:w-32"
-              />
-            </div>
-
-            <div>
-              <p className="text-center text-gray-800 font-medium text-xl py-2">
-                Programming Languages
-              </p>
-              <div>
-                {codingSkills.map(
-                  ({
-                    id,
-                    programmingLanguage,
-                    icon,
-                    skillLevel,
-                    isLearning,
-                  }) => (
-                    <div
-                      className="grid grid-cols-3 gap-2 bg-yellow-300 hover:scale-105 transform transition-transform px-5 py-3 rounded-lg shadow-lg m-2"
-                      key={id}
-                    >
-                      <div className="font-medium flex flex-row items-center">
-                        {icon}
-                        <p className="ml-2">{programmingLanguage}</p>
-                      </div>
-                      <p>{skillLevel}</p>
-                      <div className="flex justify-center">
-                        {isLearning ? (
-                          <FaAngleDoubleUp color="green" size={30} />
-                        ) : (
-                          <FaAngleDoubleDown color="red" size={30} />
-                        )}
-                      </div>
-                    </div>
-                  )
-                )}
+        <div className="container bg-blue-300 flex md:flex-col sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
+          <div>
+            <p className="text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+              Tech Stack
+            </p>
+            <p className="text-white drop-shadow-md md:text-lg sm:text-lg max-sm:text-lg text-center font-medium scale-in-ver-bottom">
+              *encountered so far...*
+            </p>
+            <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
+              <div className="grid md:grid-cols-5 sm:grid-cols-3 max-sm:grid-cols-3 justify-items-center gap-3 bg-blue-200 px-5 py-3 rounded-lg shadow-lg m-2">
+                {codingSkills.map(({ id, experiences, icon }) => (
+                  <div
+                    className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
+                    key={id}
+                  >
+                    {icon}
+                    <p className="font-medium">{experiences}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
-          <div className="container bg-green-300 flex md:flex-row sm:flex-col-reverse max-sm:flex-col-reverse justify-center items-center gap-3 rounded-lg shadow-lg py-4">
-            <div>
-              <p className="text-center text-gray-800 font-medium text-xl py-2">
-                Frameworks and Developments
-              </p>
-              <div>
-                {developmentSkills.map(
-                  ({ id, developmentName, icon, skillLevel, isLearning }) => (
-                    <div
-                      className="grid grid-cols-3 gap-2 hover:scale-105 transform transition-transform bg-lime-300 px-5 py-3 rounded-lg shadow-lg m-2"
-                      key={id}
-                    >
-                      <div className="font-medium flex flex-row items-center">
-                        {icon}
-                        <p className="ml-2">{developmentName}</p>
-                      </div>
-                      <p>{skillLevel}</p>
-                      <div className="flex justify-center">
-                        {isLearning ? (
-                          <FaAngleDoubleUp color="green" size={30} />
-                        ) : (
-                          <FaAngleDoubleDown color="red" size={30} />
-                        )}
-                      </div>
-                    </div>
-                  )
-                )}
+          <div>
+            <p className="text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+              Development & Design Tools
+            </p>
+
+            <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
+              <div className="grid md:grid-flow-col md:auto-cols-max sm:grid-cols-2 max-sm:grid-cols-1 justify-items-center gap-3 bg-blue-200 px-5 py-3 rounded-lg shadow-lg m-2">
+                {developmentTools.map(({ id, experiences, icon }) => (
+                  <div
+                    className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
+                    key={id}
+                  >
+                    {icon}
+                    <p className="font-medium">{experiences}</p>
+                  </div>
+                ))}
               </div>
             </div>
-            <div>
-              <Image
-                src={DevelopmentIcon}
-                alt="development icon"
-                className="md:w-60 sm:w-32 max-sm:w-32"
-              />
-            </div>
-          </div>
-
-          <div className="container bg-cyan-300 flex md:flex-row sm:flex-col-reverse max-sm:flex-col-reverse justify-center items-center gap-3 rounded-lg shadow-lg py-4">
-            <Image
-              src={PhotoshopIcon}
-              alt="adobe photoshop icon"
-              className="shadow-md rounded-lg md:w-60 sm:w-32 max-sm:w-32"
-            />
-            <p className="text-gray-800 font-medium text-xl py-2">
-              Photo Editing
-            </p>
-          </div>
-
-          <div className="container bg-purple-300 flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
-            <p className="text-gray-800 font-medium text-xl py-2">
-              Video Editing
-            </p>
-            <Image
-              src={PremiereProIcon}
-              alt="abode premiere pro icon"
-              className="shadow-md rounded-lg md:w-60 sm:w-32 max-sm:w-32"
-            />
-            <Image
-              src={FilmoraIcon}
-              alt="filmora icon"
-              className="shadow-md rounded-lg md:w-60 sm:w-32 max-sm:w-32"
-            />
           </div>
         </div>
-      </div>
 
-      <div className="container mx-auto flex flex-col items-center bg-white rounded-lg shadow-lg py-3 my-5">
-        <Image className="md:w-64 sm:w-32 max-sm:w-32" src={NoAILogo} />
-        <p className="text-black font-black">I don't use any AI works</p>
-      </div>
-
-      <div className="container mx-auto bg-blue-400 shadow-md rounded-md py-5 px-3">
-        <div className="flex flex-col">
-          <p className="wobble-hor-bottom text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium py-5 scale-in-ver-bottom">
+        <div className="container bg-blue-400 flex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3 rounded-lg shadow-lg py-4 text-white drop-shadow-md ">
+          <p className="md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
             Experiences
           </p>
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-1">
+              <p className="font-medium text-xl">
+                M.Velasquez Bookkeeping and Consultancy Firm
+              </p>
+              <p className="text-md">June 2021 to December 2023</p>
+              <ul className="list-disc list-inside">
+                <li className="text-md">Assist Client's daily needs</li>
+                <li className="text-md">
+                  Fix basic computer problems within the office
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-1">
+              <p className="font-medium text-xl">Davao Wisdom Academy</p>
+              <p className="text-md">June 2021 to December 2023</p>
+              <ul className="list-disc list-inside">
+                <li className="text-md">Assist with new student enrollees</li>
+                <li className="text-md">
+                  Assist with IT Lab computer software and hardware maintenance.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 

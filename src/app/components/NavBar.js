@@ -16,14 +16,21 @@ export default function Navbar() {
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [scrollDirection, setScrollDirection] = useState("down");
 
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   useEffect(() => {
-    const handleScroll = () => {
+    function handleScroll() {
       const currentScrollTop = window.scrollY;
 
       setScrollDirection(currentScrollTop > lastScrollTop ? "down" : "up");
       setScrollPosition(currentScrollTop);
       setLastScrollTop(currentScrollTop);
-    };
+    }
 
     window.addEventListener("scroll", handleScroll);
 
@@ -68,17 +75,12 @@ export default function Navbar() {
       style={{ zIndex: 1000 }}
     >
       <div>
-        {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
-        <h1 className="text-5xl text-black font-signature ml-2">
-          <a
-            className="link-underline link-underline-black text-gray-800"
-            href=""
-            target="_blank"
-            rel="noreferrer"
-          >
-            Logo
-          </a>
-        </h1>
+        <p
+          onClick={scrollToTop}
+          className="md:text-2xl sm:text-lg max-sm:text-lg font-bold text-black cursor-pointer"
+        >
+          @Jonathan...
+        </p>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link, title }) => (
