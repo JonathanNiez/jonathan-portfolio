@@ -3,23 +3,12 @@
 @tailwind utilities;
 
 body {
-  background: rgb(7, 66, 255);
-  background: -moz-linear-gradient(
-    342deg,
-    rgba(7, 66, 255, 1) 0%,
-    rgba(162, 220, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    342deg,
-    rgba(7, 66, 255, 1) 0%,
-    rgba(162, 220, 255, 1) 100%
-  );
+  background: rgb(5, 0, 94);
   background: linear-gradient(
-    342deg,
-    rgba(7, 66, 255, 1) 0%,
-    rgba(162, 220, 255, 1) 100%
+    315deg,
+    rgba(5, 0, 94, 1) 0%,
+    rgba(0, 100, 164, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0742ff",endColorstr="#a2dcff",GradientType=1);
 }
 
 .default-bg {

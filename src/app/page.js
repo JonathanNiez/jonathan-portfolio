@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TPoseJonathan from "./images/T.png";
 import { GiSkills } from "react-icons/gi";
-import { FaAngleDoubleDown } from "react-icons/fa";
+import { FaAndroid, FaAngleDoubleDown } from "react-icons/fa";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import ProgrammingIcon from "./images/programming.png";
 import DevelopmentIcon from "./images/development_icon.png";
@@ -15,7 +15,7 @@ import PhilippinesFlag from "./images/philippines_flag.png";
 import NoAILogo from "./images/no_ai.jpg";
 import GithubLogo from "./images/Github_Logo.png";
 import { FaJava } from "react-icons/fa";
-import { SiKotlin, SiNextdotjs } from "react-icons/si";
+import { SiFirebase, SiKotlin, SiMapbox, SiNextdotjs } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiCsharp } from "react-icons/si";
@@ -44,6 +44,11 @@ import { FaBootstrap } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { DiDjango } from "react-icons/di";
 import { FaGithub } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
+import { FaCrown } from "react-icons/fa6";
+import { BsStack } from "react-icons/bs";
+import { FaPuzzlePiece } from "react-icons/fa6";
 import Link from "next/link";
 
 export const metadata = {
@@ -190,67 +195,77 @@ export default function Home() {
   return (
     <div className="container mx-auto px-5">
       <div
-        className="flex flex-col md:justify-start md:items-start sm:justify-center 
-      sm:items-center max-sm:justify-center max-sm:items-center bg-black bg-opacity-60 my-5 h-auto py-2 px-3 rounded-lg shadow-lg slide-in-top"
+        className="flex md:flex-row gap-2 md:justify-start md:items-start sm:justify-center 
+      sm:items-center max-sm:justify-center max-sm:items-center sm:flex-col max-sm:flex-col bg-black text-gray-200 bg-opacity-60 my-5 h-auto py-2 px-3 rounded-lg shadow-lg slide-in-top"
       >
-        <p className="text-white md:text-3xl font-medium sm:text-xl max-sm:text-xl">
-          Hello, I'm Jonathan
-        </p>
-        <hr className="h-0.5 w-64 bg-white border-0" />
-        <div className="flex justify-center items-center">
+        <div>
           <Image
-            className="w-10"
-            src={PhilippinesFlag}
-            alt="Philippines Flag"
+            className="rounded-lg shadow-lg swing-in-right-fwd md:w-52 sm:w-32 max-sm:w-32"
+            src={TPoseJonathan}
           />
         </div>
-        <div className="flex md:flex-row sm:flex-col max-sm:flex-col">
-          <Link
-            href=""
-            className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-          >
-            View CV
-          </Link>
-          <Link
-            href="/contact"
-            className="jello-horizontal text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-          >
-            Contact Me
-          </Link>
-        </div>
-        <div className="flex flex-row bg-white p-2 rounded-full shadow-md gap-3">
-          <a
-            href="https://github.com/JonathanNiez"
-            target="_blank"
-            className="font-medium hover:scale-105 transform transition-transform"
-          >
-            <Image className="w-10" src={GithubLogo} />
-          </a>
+        <div>
+          <p className="text-white md:text-3xl font-medium sm:text-xl max-sm:text-xl">
+            Hello, I'm Jonathan
+          </p>
+          <div className="flex items-center gap-2">
+            <p className="font-medium md:text-lg sm:text-md max-sm:text-md">
+              Full-stack Developer
+            </p>
+            <Image
+              className="w-10"
+              src={PhilippinesFlag}
+              alt="Philippines Flag"
+            />
+          </div>
+          <div className="flex md:flex-row sm:flex-col max-sm:flex-col">
+            <Link
+              target="_blank"
+              href="https://www.canva.com/design/DAF6tSClUcw/StYm9ayGKFCeAPdOB165Ig/edit?utm_content=DAF6tSClUcw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            >
+              View CV
+            </Link>
+            <Link
+              href="/contact"
+              className="jello-horizontal text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            >
+              Contact Me
+            </Link>
+          </div>
+          <div className="flex flex-row items-center bg-white p-2 rounded-full shadow-md gap-3 w-auto">
+            <a
+              href="https://github.com/JonathanNiez"
+              target="_blank"
+              className="text-black font-medium hover:scale-105 transform transition-transform"
+            >
+              <FaGithub size={35} />
+            </a>
+            <a
+              href="https://www.facebook.com/mr.smoothy13"
+              target="_blank"
+              className="text-blue-700 font-medium hover:scale-105 transform transition-transform"
+            >
+              <FaFacebook size={35} />
+            </a>
+          </div>
         </div>
       </div>
 
       <div className="container mx-auto flex flex-col gap-3">
-        <div className="container mx-auto flex md:flex-row sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center my-5 gap-3 bg-white shadow-lg rounded-lg py-5">
-          <Image
-            className="rounded-lg shadow-lg swing-in-right-fwd md:w-52 sm:w-30 max-sm:w-30"
-            src={TPoseJonathan}
-          />
-          <div className="max-w-md swing-in-left-fwd">
-            <GiSkills size={50} />
-            <p className="font-medium text-lg">Full-stack Developer</p>
-          </div>
-        </div>
-
-        <div className="container bg-blue-300 flex md:flex-col sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
+        <div className="container bg-blue-800 text-gray-200 flex md:flex-col sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4">
           <div>
-            <p className="text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
-              Tech Stack
-            </p>
-            <p className="text-white drop-shadow-md md:text-lg sm:text-lg max-sm:text-lg text-center font-medium scale-in-ver-bottom">
+            <div className="flex justify-center items-center gap-2">
+              <BsStack size={35} />
+              <p className="drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+                Tech Stack
+              </p>
+            </div>
+            <p className="drop-shadow-md md:text-lg sm:text-lg max-sm:text-lg text-center font-medium scale-in-ver-bottom">
               *encountered so far...*
             </p>
             <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
-              <div className="grid md:grid-cols-5 sm:grid-cols-3 max-sm:grid-cols-3 justify-items-center gap-3 bg-blue-200 px-5 py-3 rounded-lg shadow-lg m-2">
+              <div className="grid md:grid-cols-5 sm:grid-cols-3 max-sm:grid-cols-3 justify-items-center gap-3 bg-blue-700 px-5 py-3 rounded-lg shadow-lg m-2">
                 {codingSkills.map(({ id, experiences, icon }) => (
                   <div
                     className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
@@ -270,7 +285,7 @@ export default function Home() {
             </p>
 
             <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
-              <div className="grid md:grid-flow-col md:auto-cols-max sm:grid-cols-2 max-sm:grid-cols-1 justify-items-center gap-3 bg-blue-200 px-5 py-3 rounded-lg shadow-lg m-2">
+              <div className="grid md:grid-flow-col md:auto-cols-max sm:grid-cols-2 max-sm:grid-cols-1 justify-items-center gap-3 bg-blue-700 px-5 py-3 rounded-lg shadow-lg m-2">
                 {developmentTools.map(({ id, experiences, icon }) => (
                   <div
                     className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
@@ -285,33 +300,146 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container bg-blue-400 flex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3 rounded-lg shadow-lg py-4 text-white drop-shadow-md ">
-          <p className="md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
-            Experiences
-          </p>
+        <div className="container bg-blue-800 flex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3 rounded-lg shadow-lg py-4 text-white drop-shadow-md ">
+          <div className="flex gap-2 justify-center items-center">
+            <FaCrown size={35} />
+            <p className="md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+              Experiences
+            </p>
+          </div>
           <div className="flex flex-col gap-3">
-            <div className="flex flex-col gap-1">
-              <p className="font-medium text-xl">
-                M.Velasquez Bookkeeping and Consultancy Firm
-              </p>
-              <p className="text-md">June 2021 to December 2023</p>
-              <ul className="list-disc list-inside">
-                <li className="text-md">Assist Client's daily needs</li>
-                <li className="text-md">
-                  Fix basic computer problems within the office
-                </li>
-              </ul>
-            </div>
+            <ol class="relative border-s border-white-200">
+              <li class="mb-10 ms-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white "></span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+                  M.Velasquez Bookkeeping and Consultancy Firm
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-white">
+                  June 2021 to December 2023
+                </time>
+                <ul className="list-disc list-inside">
+                  <li className="text-md">Assist Client's daily needs</li>
+                  <li className="text-md">
+                    Fix basic computer problems within the office
+                  </li>
+                </ul>
+              </li>
 
+              <li class="mb-10 ms-6">
+                <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white "></span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+                  Davao Wisdom Academy
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-white">
+                  March 2019 to August 2020
+                </time>
+                <ul className="list-disc list-inside">
+                  <li className="text-md">Assist with new student enrollees</li>
+                  <li className="text-md">
+                    Assist with IT Lab computer software and hardware
+                    maintenance.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div className="container bg-blue-800 flex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3 rounded-lg shadow-lg py-4 text-white drop-shadow-md ">
+          <div className="flex gap-2 justify-center items-center">
+            <FaGraduationCap size={35} />
+            <p className="md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+              Education
+            </p>
+          </div>
+          <div>
             <div className="flex flex-col gap-1">
-              <p className="font-medium text-xl">Davao Wisdom Academy</p>
-              <p className="text-md">June 2021 to December 2023</p>
-              <ul className="list-disc list-inside">
-                <li className="text-md">Assist with new student enrollees</li>
-                <li className="text-md">
-                  Assist with IT Lab computer software and hardware maintenance.
+              <ol class="relative border-s border-white-200">
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white "></span>
+                  <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+                    Holy Cross of Davao College
+                  </h3>
+                  <time class="block mb-2 text-sm font-normal leading-none text-white">
+                    2019 - 2024
+                  </time>
+                  <ul className="list-disc list-inside">
+                    <li className="text-md">Auditor (A.Y. 2022 – 2023)</li>
+                  </ul>
                 </li>
-              </ul>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div className="container bg-blue-800 flex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3 rounded-lg shadow-lg py-4 text-white drop-shadow-md ">
+          <div className="flex gap-2 justify-center items-center">
+            <FaPuzzlePiece size={35} />
+            <p className="md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+              Projects
+            </p>
+          </div>
+          <div>
+            <div className="flex flex-col gap-1">
+              <ol class="relative border-s border-white-200">
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white "></span>
+                  <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+                    Random Password Generator using Python
+                  </h3>
+                  <p class="block mb-2 text-sm font-normal leading-none text-white">
+                    A very simple and easy random password generator using
+                    Python than good beginners.
+                  </p>
+                  <FaPython size={35} />
+                </li>
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white "></span>
+                  <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+                    Online Shopping App
+                  </h3>
+                  <p class="block mb-2 text-sm font-normal leading-none text-white">
+                    A simple E-commerce app with easy to use UI and with chat
+                    feature.
+                  </p>
+                  <div className="flex gap-2">
+                    <FaJava size={35} />
+                    <SiAndroidstudio size={35} />
+                    <FaAndroid size={35} />
+                  </div>
+                </li>
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white "></span>
+                  <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+                    CareCabs
+                  </h3>
+                  <p class="block mb-2 text-sm font-normal leading-none text-white">
+                    A simple E-commerce app with user-friendly UI and chat
+                    feature.
+                  </p>
+                  <div className="flex gap-2">
+                    <FaAndroid size={35} />
+                    <SiAndroidstudio size={35} />
+                    <FaJava size={35} />
+                    <TbBrandKotlin size={35} />
+                    <SiMapbox size={35} />
+                    <SiFirebase size={35} />
+                  </div>
+                </li>
+                <li class="mb-10 ms-6">
+                  <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white "></span>
+                  <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+                    Dormitory Management using Blazor
+                  </h3>
+                  <p class="block mb-2 text-sm font-normal leading-none text-white">
+                    A dormitory management using Blazor with user-friendly UI.
+                  </p>
+                  <div className="flex gap-2">
+                    <SiCsharp size={35} />
+                    <SiBlazor size={35} />
+                  </div>
+                </li>
+              </ol>
             </div>
           </div>
         </div>

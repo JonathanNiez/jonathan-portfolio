@@ -49,7 +49,7 @@ export default function About() {
       </div>
       <div className="grid grid-cols-3 gap-2 justify-items-stretch my-5 sm:mx-2 max-sm:mx-2">
         <div className="col-span-2 flex flex-col gap-4 text-white drop-shadow-md">
-          <div className="flex flex-col gap-2 bg-blue-400 shadow-md rounded-md py-2 px-3">
+          <div className="flex flex-col gap-2 bg-blue-700 shadow-md rounded-md py-2 px-3">
             <p className="slide-in-right text-3xl sm:texl-xl max-sm:text-xl font-bold ">
               Hello, I am Jonathan A. Niez Jr.
             </p>
@@ -80,8 +80,8 @@ export default function About() {
       </div>
 
       <div className="container mx-auto ">
-        <div className="flex flex-col justify-center items-center gap-2 bg-blue-500 py-3 px-2 shadow-lg rounded-lg sm:mx-2 max-sm:mx-2">
-          <p className="text-white font-medium text-xl sm:text-lg max-sm:text-lg drop-shadow-md">
+        <div className="flex flex-col justify-center items-center gap-2 bg-blue-600 py-3 px-2 shadow-lg rounded-lg sm:mx-2 max-sm:mx-2">
+          <p className="text-white font-medium md:text-xl sm:text-lg max-sm:text-lg drop-shadow-md">
             Certificates
           </p>
           <div className="grid grid-cols-2 gap-3 justify-items-center bg-gray-200 rounded-md shadow-md p-2">
@@ -107,7 +107,7 @@ export default function About() {
       <div className="container mx-auto">
         <div className="sm:mx-2 max-sm:mx-2 my-5 bg-white flex flex-col  justify-center items-center py-4 px-3 shadow-lg rounded-lg">
           <p className="font-medium md:text-lg sm:text:md max-sm:text:md mb-4">
-            I built this portforlio using:
+            Made with:
           </p>
           <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-4">
             <a
