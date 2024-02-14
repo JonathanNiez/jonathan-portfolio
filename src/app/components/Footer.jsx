@@ -15,24 +15,6 @@ export default function Footer() {
               Jonathan Niez
             </span>
           </p>
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium  sm:mb-0">
-            <li>
-              <Link
-                href="/about"
-                className="px-4 py-2 hover:scale-105 hover:font-black hover:bg-blue-500 hover:rounded-lg duration-200 me-4 md:me-6"
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                className="px-4 py-2 hover:scale-105 hover:font-black hover:bg-blue-500 hover:rounded-lg duration-200"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <span className="block text-sm  sm:text-center ">

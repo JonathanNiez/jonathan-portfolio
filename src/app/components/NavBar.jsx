@@ -41,16 +41,26 @@ export default function Navbar() {
   const links = [
     {
       id: 1,
-      title: "Home",
-      link: "#",
+      title: "Tech Stack",
+      link: "#techStack",
     },
     {
       id: 2,
+      title: "Experiences",
+      link: "#experiences",
+    },
+    {
+      id: 3,
+      title: "Education",
+      link: "#education",
+    },
+    {
+      id: 4,
       title: "Projects",
       link: "#projects",
     },
     {
-      id: 3,
+      id: 5,
       title: "Contact",
       link: "#contact",
     },
@@ -67,12 +77,12 @@ export default function Navbar() {
       style={{ zIndex: 1000 }}
     >
       <div>
-        <Link
-          href="/"
+        <a
+          href="#"
           className="md:text-2xl sm:text-lg max-sm:text-lg font-bold cursor-pointer"
         >
           @Jonathan...
-        </Link>
+        </a>
       </div>
       <ul className="hidden md:flex">
         {links.map(({ id, link, title }) => (

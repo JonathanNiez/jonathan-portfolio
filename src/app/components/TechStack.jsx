@@ -1,0 +1,223 @@
+import { FaJava } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiCsharp } from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa";
+import { IoLogoAndroid } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import {
+  TbBrandKotlin,
+  TbBrandNextjs,
+  TbBrandReactNative,
+} from "react-icons/tb";
+import { SiSvelte } from "react-icons/si";
+import { PiFileSql } from "react-icons/pi";
+import { FaHtml5 } from "react-icons/fa";
+import { SiAndroidstudio } from "react-icons/si";
+import { SiAdobephotoshop } from "react-icons/si";
+import { SiAdobepremierepro } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { SiBlazor } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+import { DiDjango } from "react-icons/di";
+import { FaGithub } from "react-icons/fa";
+import { BsStack } from "react-icons/bs";
+
+export default function TechStack() {
+  const codingSkills = [
+    {
+      id: 1,
+      experiences: "Java",
+      icon: <FaJava size={35} />,
+    },
+    {
+      id: 2,
+      experiences: "Kotlin",
+      icon: <TbBrandKotlin size={35} />,
+    },
+    {
+      id: 3,
+      experiences: "Python",
+      icon: <FaPython size={35} />,
+    },
+    {
+      id: 4,
+      experiences: "Javascript",
+      icon: <IoLogoJavascript size={35} />,
+    },
+    {
+      id: 5,
+      experiences: "C#",
+      icon: <SiCsharp size={35} />,
+    },
+    {
+      id: 6,
+      experiences: "C++",
+      icon: <SiCplusplus size={35} />,
+    },
+    {
+      id: 7,
+      experiences: "CSS",
+      icon: <FaCss3Alt size={35} />,
+    },
+    {
+      id: 8,
+      experiences: "HTML",
+      icon: <FaHtml5 size={35} />,
+    },
+    {
+      id: 9,
+      experiences: "PHP",
+      icon: <FaPhp size={35} />,
+    },
+    {
+      id: 10,
+      experiences: "SQL",
+      icon: <PiFileSql size={35} />,
+    },
+    {
+      id: 11,
+      experiences: "Tailwind CSS",
+      icon: <SiTailwindcss size={35} />,
+    },
+    {
+      id: 12,
+      experiences: "Bootstrap",
+      icon: <FaBootstrap size={35} />,
+    },
+    {
+      id: 13,
+      experiences: "Android",
+      icon: <IoLogoAndroid size={35} />,
+    },
+    {
+      id: 14,
+      experiences: "ReactJS",
+      icon: <FaReact size={35} />,
+    },
+    {
+      id: 15,
+      experiences: "NextJS",
+      icon: <TbBrandNextjs size={35} />,
+    },
+    {
+      id: 16,
+      experiences: "Svelte",
+      icon: <SiSvelte size={35} />,
+    },
+    {
+      id: 17,
+      experiences: "Blazor",
+      icon: <SiBlazor size={35} />,
+    },
+    {
+      id: 18,
+      experiences: "React Native",
+      icon: <TbBrandReactNative size={35} />,
+    },
+    {
+      id: 19,
+      experiences: "Git",
+      icon: <FaGitAlt size={35} />,
+    },
+    {
+      id: 20,
+      experiences: "Github",
+      icon: <FaGithub size={35} />,
+    },
+    {
+      id: 21,
+      experiences: "Firebase",
+      icon: <IoLogoFirebase size={35} />,
+    },
+    {
+      id: 22,
+      experiences: "Django",
+      icon: <DiDjango size={35} />,
+    },
+    {
+      id: 23,
+      experiences: "Android Studio",
+      icon: <SiAndroidstudio size={35} />,
+    },
+  ];
+
+  const developmentTools = [
+    {
+      id: 1,
+      experiences: "Photoshop",
+      icon: <SiAdobephotoshop size={35} />,
+    },
+    {
+      id: 2,
+      experiences: "Premiere Pro",
+      icon: <SiAdobepremierepro size={35} />,
+    },
+    {
+      id: 3,
+      experiences: "Figma",
+      icon: <FaFigma size={35} />,
+    },
+  ];
+
+  return (
+    <div
+      id="techStack"
+      className="container bg-blue-800 text-gray-200 flex md:flex-col sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4"
+    >
+      <div>
+        <div className="flex justify-center items-center gap-2">
+          <BsStack size={35} />
+          <p className="drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+            Tech Stack
+          </p>
+        </div>
+        <p className="drop-shadow-md md:text-lg sm:text-lg max-sm:text-lg text-center font-medium scale-in-ver-bottom">
+          *encountered so far...*
+        </p>
+        <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
+          <div className="grid md:grid-cols-5 sm:grid-cols-3 max-sm:grid-cols-3 justify-items-center gap-3 bg-blue-700 px-5 py-3 rounded-lg shadow-lg m-2">
+            {codingSkills.map(({ id, experiences, icon }) => (
+              <div
+                className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
+                key={id}
+              >
+                {icon}
+                <p className="select-none text-center font-medium md:text-lg sm:text-sm max-sm:text-sm">
+                  {experiences}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p className="text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+          Development & Design Tools
+        </p>
+
+        <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
+          <div className="grid md:grid-flow-col md:auto-cols-max sm:grid-cols-2 max-sm:grid-cols-1 justify-items-center gap-3 bg-blue-700 px-5 py-3 rounded-lg shadow-lg m-2">
+            {developmentTools.map(({ id, experiences, icon }) => (
+              <div
+                className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
+                key={id}
+              >
+                {icon}
+                <p className="select-none text-center font-medium md:text-lg sm:text-sm max-sm:text-sm">
+                  {experiences}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
