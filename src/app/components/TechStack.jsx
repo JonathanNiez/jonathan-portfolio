@@ -27,6 +27,8 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { DiDjango } from "react-icons/di";
 import { FaGithub } from "react-icons/fa";
 import { BsStack } from "react-icons/bs";
+import { FaLaravel } from "react-icons/fa6";
+import { FaVuejs } from "react-icons/fa6";
 
 export default function TechStack() {
   const codingSkills = [
@@ -144,6 +146,16 @@ export default function TechStack() {
       id: 23,
       experiences: "Android Studio",
       icon: <SiAndroidstudio size={35} />,
+    },
+    {
+      id: 24,
+      experiences: "Laravel",
+      icon: <FaLaravel size={35} />,
+    },
+    {
+      id: 25,
+      experiences: " Vue",
+      icon: <FaVuejs size={35} />,
     },
   ];
 
