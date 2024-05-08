@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import TPoseJonathan from "./images/T.png";
 import Jonathan from "./images/me_capstone.png";
+import Magic from "./images/magic.png";
 import TechStack from "./components/TechStack";
 import FacebookLogo from "./images/Facebook_Logo.png";
 import GmailLogo from "./images/Gmail_Logo.png";
@@ -26,6 +27,8 @@ import Projects from "./components/Projects";
 
 export default function Home() {
   const [zoomStates, setZoomStates] = useState({});
+  const [imageSrc, setImageSrc] = useState(Jonathan);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   const zoomImage = (id) => {
     setZoomStates((prevZoomStates) => ({
@@ -52,6 +55,11 @@ export default function Home() {
       src: Certificate4,
     },
   ];
+
+  const changeImage = () => {
+    setImageSrc((prevSrc) => (prevSrc === Jonathan ? Magic : Jonathan));
+    setIsFlipped(!isFlipped);
+  };
 
   return (
     <div id="#">
@@ -135,13 +143,18 @@ export default function Home() {
 
         <div className="flex flex-col justify-center items-center gap-2">
           <Image
-            className=" sm:w-60 max-sm:w-60 rounded-lg shadow-md"
-            src={Jonathan}
+            className={`sm:w-60 max-sm:w-60 rounded-lg shadow-md ${
+              isFlipped ? "flip-diagonal-2-br" : ""
+            }`}
+            src={imageSrc}
             alt="Jonathan"
           />
-          <div className="slide-in-right bg-white hover:bg-gray-300 shadow-lg rounded-lg py-2 px-3 cursor-pointer">
+          <button
+            onClick={changeImage}
+            className="slide-in-right bg-white hover:bg-gray-300 shadow-lg rounded-lg py-2 px-3 cursor-pointer"
+          >
             <FiRefreshCcw size={40} />
-          </div>
+          </button>
         </div>
       </div>
 
