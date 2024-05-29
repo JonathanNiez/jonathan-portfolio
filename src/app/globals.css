@@ -7,11 +7,11 @@ html {
 }
 
 body {
-  background: rgb(5, 0, 94);
+  background: rgb(162, 213, 255);
   background: linear-gradient(
     315deg,
-    rgba(5, 0, 94, 1) 0%,
-    rgba(0, 100, 164, 1) 100%
+    rgb(0, 85, 150) 0%,
+    rgb(119, 203, 255) 100%
   );
 }
 

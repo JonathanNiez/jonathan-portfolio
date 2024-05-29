@@ -2,13 +2,10 @@ import { FaGraduationCap } from "react-icons/fa";
 
 export default function Education() {
   return (
-    <div
-      className="containerflex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3
-        py-4 text-white drop-shadow-md "
-    >
+    <div className="container flex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3 py-4 text-white drop-shadow-md ">
       <div className="flex gap-2 justify-center items-center">
         <FaGraduationCap size={35} />
-        <p className="drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+        <p className="drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-montserrat-500 scale-in-ver-bottom">
           Education
         </p>
       </div>

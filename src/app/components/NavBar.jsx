@@ -2,10 +2,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { usePathname, useRouter } from "next/navigation";
-import { Switch } from "@nextui-org/react";
-import { MoonIcon } from "../icons/MoonIcon";
-import { SunIcon } from "../icons/SunIcon";
+import { usePathname } from "next/navigation";
+import NProgress from "nprogress";
+import "../globals.css";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -42,61 +41,76 @@ export default function Navbar() {
     {
       id: 1,
       title: "Tech Stack",
-      link: "#techStack",
+      link: "/techStack",
     },
     {
       id: 2,
       title: "Experiences",
-      link: "#experiences",
+      link: "/experiences",
     },
     {
       id: 3,
       title: "Education",
-      link: "#education",
+      link: "/education",
     },
     {
       id: 4,
       title: "Projects",
-      link: "#projects",
+      link: "/projects",
     },
     {
       id: 5,
-      title: "Contact",
-      link: "#contact",
+      title: "Certificates",
+      link: "/certificates",
+    },
+    {
+      id: 6,
+      title: "Journal",
+      link: "/journal",
     },
   ];
 
   return (
     <div
-      className={`flex justify-between items-center w-full h-20 sticky top-0 px-4
-      bg-blue-800 text-gray-200 transition-all duration-300 shadow-md  ${
+      className={`flex justify-between items-center w-full h-auto sticky top-0 px-20
+      py-5
+      bg-blue-lapis_lazuli text-white transition-all duration-300 shadow-md mb-5 ${
         scrollDirection === "down" && scrollPosition > 100
           ? "transform translate-y-[-80px]"
           : "transform translate-y-0"
       }`}
       style={{ zIndex: 1000 }}
     >
-      <div>
-        <a
-          href="#"
-          className="md:text-2xl sm:text-lg max-sm:text-lg font-bold cursor-pointer"
-        >
-          @Jonathan...
-        </a>
-      </div>
+      <a
+        href="/"
+        className="font-montserrat-400 md:text-2xl sm:text-lg max-sm:text-lg font-bold cursor-pointer"
+      >
+        @jonathan.dev
+      </a>
       <ul className="hidden md:flex">
         {links.map(({ id, link, title }) => (
           <li
             key={id}
-            className={`nav-links px-4 py-2 cursor-pointer capitalize font-medium hover:scale-105 hover:font-black hover:bg-blue-500 hover:rounded-lg duration-200 link-underline`}
+            className={`nav-links px-4 py-2 cursor-pointer capitalize font-medium 
+             ${
+               pathname === link
+                 ? ""
+                 : "hover:scale-105 hover:font-black hover:bg-blue-500 hover:rounded-lg duration-200"
+             }  link-underline`}
           >
             <Link
-              className={
+              className={`${
                 pathname === link
-                  ? "text-gray-800 bg-blue-500 rounded-lg px-4 py-2"
-                  : "text-gray-200"
-              }
+                  ? "text-gray-700 bg-blue-200 p-3 rounded-md"
+                  : "text-white"
+              } drop-shadow-md font-montserrat-600`}
               href={link}
+              onClick={() => {
+                NProgress.start();
+                setTimeout(() => {
+                  NProgress.done();
+                }, 2000);
+              }}
             >
               {title}
             </Link>
@@ -114,14 +128,14 @@ export default function Navbar() {
           {links.map(({ id, link, title }) => (
             <li
               key={id}
-              className="px-4 py-6 cursor-pointer capitalize text-white text-3xl font-medium "
+              className="px-4 py-6 cursor-pointer capitalize text-white text-3xl font-medium"
             >
               <Link
-                className={
+                className={`${
                   pathname === link
-                    ? "text-gray-800 bg-blue-500 rounded-lg shadow-lg px-4 py-2"
-                    : "text-gray-200 drop-shadow-md"
-                }
+                    ? "bg-blue-200 text-gray-800 p-2 rounded-md"
+                    : ""
+                } text-white drop-shadow-md`}
                 onClick={() => setNav(!nav)}
                 href={link}
               >
