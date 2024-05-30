@@ -1,6 +1,12 @@
+"use client";
+import { useEffect } from "react";
 import { FaGraduationCap } from "react-icons/fa";
 
 export default function Education() {
+  useEffect(() => {
+    document.title = "Jonathan A. Niez Jr. | Education";
+  }, []);
+
   return (
     <div className="container flex md:flex-col sm:flex-col max-sm:flex-col sm:px-4 max-sm:px-4 justify-center items-center gap-3 py-4 text-white drop-shadow-md ">
       <div className="flex gap-2 justify-center items-center">

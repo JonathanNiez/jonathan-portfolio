@@ -24,15 +24,15 @@ export default function Footer() {
               className="h-8"
               alt="JonathanNiez Logo"
             /> */}
-            <span class="self-center lg:text-2xl max-sm:text-lg sm:text-lg font-semibold whitespace-nowrap ">
+            <span class="self-center md:text-2xl max-sm:text-md sm:text-md font-montserrat whitespace-nowrap ">
               Jonathan A. Niez Jr.
             </span>
           </p>
-          <div className="sm:mx-2 max-sm:mx-2 my-5 flex flex-col justify-center items-center py-4 px-3">
-            <p className="font-medium md:text-md sm:text-sm max-sm:text-sm mb-4">
+          <div className="flex flex-row sm:mx-2 max-sm:mx-2 my-5 justify-center items-center py-4 px-3">
+            <p className="font-montserrat-500 md:text-md sm:mr-2 max-sm:mr-2 sm:text-sm max-sm:text-sm mb-4">
               Made with:
             </p>
-            <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-4">
+            <div className="flex flex-row justify-center items-center gap-2">
               <a
                 href="https://nextjs.org"
                 target="_blank"
@@ -51,10 +51,10 @@ export default function Footer() {
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <span className="block text-sm  sm:text-center">
+        <span className="font-montserrat block text-xs max-sm:text-center sm:text-center">
           © {currentYear} Jonathan A. Niez Jr. All Rights Reserved.
         </span>
-        <span className="block text-sm sm:text-center max-sm:text-center">
+        <span className="font-montserrat-400 block text-sm sm:text-center max-sm:text-center">
           To God be the Glory
         </span>
       </div>

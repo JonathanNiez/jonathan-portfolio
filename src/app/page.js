@@ -144,14 +144,22 @@ export default function Overview() {
             target="_blank"
             className="drop-shadow-lg hover:scale-105 transform transition-transform"
           >
-            <Image className="md:w-60 sm:w-28 max-sm:w-32" src={UnityLogo} />
+            <Image
+              className="md:w-60 sm:w-28 max-sm:w-32"
+              src={UnityLogo}
+              alt="unity_logo"
+            />
           </a>
           <a
             href="https://godotengine.org"
             target="_blank"
             className="drop-shadow-lg hover:scale-105 transform transition-transform"
           >
-            <Image className="md:w-60 sm:w-36 max-sm:w-36" src={GodotLogo} />
+            <Image
+              className="md:w-60 sm:w-36 max-sm:w-36"
+              src={GodotLogo}
+              alt="godot_logo"
+            />
           </a>
 
           <a
@@ -159,7 +167,11 @@ export default function Overview() {
             target="_blank"
             className="drop-shadow-lg hover:scale-105 transform transition-transform"
           >
-            <Image className="md:w-44 sm:w-24 max-sm:w-24" src={RenPyLogo} />
+            <Image
+              className="md:w-44 sm:w-24 max-sm:w-24"
+              src={RenPyLogo}
+              alt="renpy_logo"
+            />
           </a>
         </div>
       </div>

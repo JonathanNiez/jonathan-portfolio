@@ -72,7 +72,7 @@ export default function Navbar() {
 
   return (
     <div
-      className={`flex justify-between items-center w-full h-auto sticky top-0 px-20
+      className={`flex justify-between items-center w-full h-auto sticky top-0 md:px-20 max-sm:px-5 sm:px-5
       py-5
       bg-blue-lapis_lazuli text-white transition-all duration-300 shadow-md mb-5 ${
         scrollDirection === "down" && scrollPosition > 100
@@ -133,9 +133,9 @@ export default function Navbar() {
               <Link
                 className={`${
                   pathname === link
-                    ? "bg-blue-200 text-gray-800 p-2 rounded-md"
-                    : ""
-                } text-white drop-shadow-md`}
+                    ? "text-gray-700 bg-blue-200 p-3 rounded-md"
+                    : "text-white"
+                } drop-shadow-md font-montserrat-600`}
                 onClick={() => setNav(!nav)}
                 href={link}
               >

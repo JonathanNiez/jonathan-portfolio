@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       className={`${inter.variable} ${montserrat.variable} ${montserrat_400.variable} ${montserrat_500.variable} ${montserrat_600.variable}`}
     >
       <Head>
-        <link ref="icon" href="/images/favicon.png" />
+        <link rel="icon" href="favicon.ico" sizes="any" />
       </Head>
       <body className="flex flex-col min-h-screen">
         <Navbar />

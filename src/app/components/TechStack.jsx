@@ -178,7 +178,10 @@ export default function TechStack() {
   ];
 
   return (
-    <div className="container flex items-center justify-center gap-3 py-4 text-white max-sm:flex-col sm:flex-col md:flex-col">
+    <div
+      className="container flex items-center justify-center gap-3 py-4 text-white
+     max-sm:flex-col sm:flex-col md:flex-col"
+    >
       <div className="flex items-center justify-center gap-2">
         <BsStack size={35} />
         <p className="scale-in-ver-bottom text-center font-montserrat-600 drop-shadow-md max-sm:text-2xl sm:text-2xl md:text-4xl">

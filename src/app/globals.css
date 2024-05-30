@@ -16,21 +16,22 @@ body {
 }
 
 .default-bg {
-  background: rgb(7, 66, 255);
+  background: rgb(0, 85, 150);
   background: -moz-linear-gradient(
-    342deg,
-    rgba(7, 66, 255, 1) 0%,
-    rgba(162, 220, 255, 1) 100%
+    315deg,
+    rgb(0, 85, 150) 0%,
+    rgb(119, 203, 255) 100%
   );
   background: -webkit-linear-gradient(
-    342deg,
-    rgba(7, 66, 255, 1) 0%,
-    rgba(162, 220, 255, 1) 100%
+    315deg,
+    rgb(0, 85, 150) 0%,
+    rgb(119, 203, 255) 100%
   );
   background: linear-gradient(
     342deg,
-    rgba(7, 66, 255, 1) 0%,
-    rgba(162, 220, 255, 1) 100%
+    315deg,
+    rgb(0, 85, 150) 0%,
+    rgb(119, 203, 255) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0742ff",endColorstr="#a2dcff",GradientType=1);
 }

@@ -1,3 +1,5 @@
+"use client";
+import { useEffect } from "react";
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -31,6 +33,10 @@ import { FaLaravel } from "react-icons/fa6";
 import { FaVuejs } from "react-icons/fa6";
 
 export default function TechStack() {
+  useEffect(() => {
+    document.title = "Jonathan A. Niez Jr. | Tech Stack";
+  }, []);
+
   const codingSkills = [
     {
       id: 1,
