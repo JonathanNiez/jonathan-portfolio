@@ -24,7 +24,7 @@ export default function Footer() {
               className="h-8"
               alt="JonathanNiez Logo"
             /> */}
-            <span class="self-center md:text-2xl max-sm:text-md sm:text-md font-montserrat whitespace-nowrap ">
+            <span className="self-center md:text-2xl max-sm:text-md sm:text-md font-montserrat whitespace-nowrap ">
               Jonathan A. Niez Jr.
             </span>
           </p>

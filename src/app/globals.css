@@ -16,24 +16,12 @@ body {
 }
 
 .default-bg {
-  background: rgb(0, 85, 150);
-  background: -moz-linear-gradient(
-    315deg,
-    rgb(0, 85, 150) 0%,
-    rgb(119, 203, 255) 100%
-  );
-  background: -webkit-linear-gradient(
-    315deg,
-    rgb(0, 85, 150) 0%,
-    rgb(119, 203, 255) 100%
-  );
+  background: rgb(162, 213, 255);
   background: linear-gradient(
-    342deg,
     315deg,
     rgb(0, 85, 150) 0%,
     rgb(119, 203, 255) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0742ff",endColorstr="#a2dcff",GradientType=1);
 }
 
 .jello-horizontal {

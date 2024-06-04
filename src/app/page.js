@@ -5,9 +5,6 @@ import TPoseJonathan from "./images/T.png";
 import Jonathan from "./images/me_capstone.png";
 import Magic from "./images/magic.png";
 import TechStack from "./components/TechStack";
-import FacebookLogo from "./images/Facebook_Logo.png";
-import GmailLogo from "./images/Gmail_Logo.png";
-import WhatsAppLogo from "./images/WhatsApp_Logo.png";
 import UnityLogo from "./images/unity_logo.png";
 import GodotLogo from "./images/godot_logo.png";
 import RenPyLogo from "./images/renpy_logo.png";
@@ -28,6 +25,24 @@ export default function Overview() {
     setImageSrc((prevSrc) => (prevSrc === Jonathan ? Magic : Jonathan));
     setIsFlipped(!isFlipped);
   };
+
+  const getAge = (birthDate) => {
+    const today = new Date();
+    const birth = new Date(birthDate);
+    let age = today.getFullYear() - birth.getFullYear();
+    const monthDifference = today.getMonth() - birth.getMonth();
+
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < birth.getDate())
+    ) {
+      age--;
+    }
+
+    return age;
+  };
+
+  const age = getAge("2002-02-09");
 
   return (
     <div id="#">
@@ -97,15 +112,15 @@ export default function Overview() {
               Hello, I'm Jonathan.
             </p>
             <p className="font-montserrat-400 slide-in-left text-wrap md:text-lg sm:text-sm max-sm:text-sm">
-              I am a 21 year old Programmer/Developer, I build websites, android
-              both front-end and back-end development and edit photos and
-              videos. I have experience few programming languages and web
-              frameworks such as ReactJS, NextJS, Javascript, CSS, Java, Kotlin,
-              Python, C++ and C#.
+              I am a {age}-year-old Programmer/Developer. I build websites and
+              Android applications, and I handle both front-end and back-end
+              development. I also edit photos and videos. I have experience with
+              several programming languages and web frameworks such as ReactJS,
+              NextJS, Javascript, CSS, Java, Kotlin, Python, C++, and C#.
             </p>
             <p className="font-montserrat-400 slide-in-left text-wrap md:text-lg sm:text-sm max-sm:text-sm">
-              I can adapt, flexible and willing to learn new programming
-              languages or frameworks to expand my knowledge.
+              I am adaptable, flexible, and always willing to learn new
+              programming languages or frameworks to expand my knowledge.
             </p>
           </div>
         </div>

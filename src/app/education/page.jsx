@@ -16,25 +16,25 @@ export default function Education() {
         </p>
       </div>
       <div className="w-full flex flex-col justify-start items-start">
-        <ol class="relative border-s border-white-200">
-          <li class="mb-10 ms-6">
+        <ol className="relative border-s border-white-200">
+          <li className="mb-10 ms-6">
             <span className="absolute start-[-5px] w-2 h-2 bg-blue-200 rounded-full"></span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-white">
               Holy Cross of Davao College
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-white">
+            <time className="block mb-2 text-sm font-normal leading-none text-white">
               2019 - Present
             </time>
             <ul className="list-disc list-inside">
               <li className="text-md">Auditor (S.Y. 2022 – 2023)</li>
             </ul>
           </li>
-          <li class="mb-10 ms-6">
+          <li className="mb-10 ms-6">
             <span className="absolute start-[-5px] w-2 h-2 bg-blue-200 rounded-full"></span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-white">
               Davao Wisdom Academy
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-white">
+            <time className="block mb-2 text-sm font-normal leading-none text-white">
               (S.Y. 2018 – 2020)
             </time>
             <ul className="list-disc list-inside">

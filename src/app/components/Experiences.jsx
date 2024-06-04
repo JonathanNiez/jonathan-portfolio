@@ -27,12 +27,12 @@ export default function Experiences() {
             </ul>
           </li>
 
-          <li class="mb-10 ms-6">
+          <li className="mb-10 ms-6">
             <span className="absolute start-[12px] w-2 h-2 bg-blue-200 rounded-full"></span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold text-white">
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-white">
               Davao Wisdom Academy
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-white">
+            <time className="block mb-2 text-sm font-normal leading-none text-white">
               March 2019 to August 2020
             </time>
             <ul className="list-disc list-inside">

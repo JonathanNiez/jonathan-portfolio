@@ -91,7 +91,7 @@ export default function Navbar() {
         {links.map(({ id, link, title }) => (
           <li
             key={id}
-            className={`nav-links px-4 py-2 cursor-pointer capitalize font-medium 
+            className={`nav-links px-4 py-2 cursor-pointer
              ${
                pathname === link
                  ? ""
@@ -101,7 +101,7 @@ export default function Navbar() {
             <Link
               className={`${
                 pathname === link
-                  ? "text-gray-700 bg-blue-200 p-3 rounded-md"
+                  ? "text-gray-700 bg-blue-200 px-4 py-2 rounded-md"
                   : "text-white"
               } drop-shadow-md font-montserrat-600`}
               href={link}

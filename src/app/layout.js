@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
 import { Inter, Montserrat } from "next/font/google";
 import Navbar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
@@ -51,9 +50,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${montserrat.variable} ${montserrat_400.variable} ${montserrat_500.variable} ${montserrat_600.variable}`}
     >
-      <Head>
+      <head>
         <link rel="icon" href="favicon.ico" sizes="any" />
-      </Head>
+      </head>
       <body className="flex flex-col min-h-screen">
         <Navbar />
         <div className="container mx-auto flex flex-col md:px-24 sm:px-10 max-sm:px-10 flex-grow">
