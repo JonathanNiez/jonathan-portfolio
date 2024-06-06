@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./background.scss";
 import { Inter, Montserrat, Roboto } from "next/font/google";
 import Navbar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";

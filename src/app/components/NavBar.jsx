@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import NProgress from "nprogress";
 import "../globals.css";
+import "../background.scss";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -119,7 +120,7 @@ export default function Navbar() {
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen default-bg">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen navBarBg">
           {links.map(({ id, link, title }) => (
             <li
               key={id}
