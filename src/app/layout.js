@@ -1,7 +1,8 @@
 import "./globals.css";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter, Montserrat, Roboto } from "next/font/google";
 import Navbar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
+import Contact from "./components/Contact";
 
 export const metadata = {
   title: "Jonathan A. Niez Jr.",
@@ -44,17 +45,26 @@ const montserrat_600 = Montserrat({
   variable: "--font-montserrat-600",
 });
 
+const roboto = Roboto({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+});
+
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${montserrat.variable} ${montserrat_400.variable} ${montserrat_500.variable} ${montserrat_600.variable}`}
+      className={`${inter.variable} ${montserrat.variable} ${montserrat_400.variable}
+       ${montserrat_500.variable} ${montserrat_600.variable} ${roboto.variable}`}
     >
       <head>
         <link rel="icon" href="favicon.ico" sizes="any" />
       </head>
       <body className="flex flex-col min-h-screen">
         <Navbar />
+        <Contact />
         <div className="container mx-auto flex flex-col md:px-24 sm:px-10 max-sm:px-10 flex-grow">
           {children}
         </div>

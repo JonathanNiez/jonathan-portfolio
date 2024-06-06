@@ -185,17 +185,17 @@ export default function TechStack() {
 
   return (
     <div
-      id="techStack"
-      className="container bg-blue-300 text-gray-200 flex md:flex-col sm:flex-col max-sm:flex-col justify-center items-center gap-3 rounded-lg shadow-lg py-4"
+      className="container flex items-center justify-center gap-3 py-4 text-white
+     max-sm:flex-col sm:flex-col md:flex-col"
     >
       <div>
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex justify-center items-center gap-2 scale-in-ver-bottom">
           <BsStack size={35} />
-          <p className="drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+          <p className="drop-shadow-lg md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-montserrat-600">
             Tech Stack
           </p>
         </div>
-        <p className="drop-shadow-md md:text-lg sm:text-lg max-sm:text-lg text-center font-medium scale-in-ver-bottom">
+        <p className="drop-shadow-md md:text-lg sm:text-lg max-sm:text-lg text-center font-montserrat-500 scale-in-ver-bottom">
           *encountered so far...*
         </p>
         <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
@@ -216,7 +216,7 @@ export default function TechStack() {
       </div>
 
       <div>
-        <p className="text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-medium scale-in-ver-bottom">
+        <p className="text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-montserrat-500 scale-in-ver-bottom">
           Development & Design Tools
         </p>
 

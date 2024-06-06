@@ -182,51 +182,47 @@ export default function TechStack() {
       className="container flex items-center justify-center gap-3 py-4 text-white
      max-sm:flex-col sm:flex-col md:flex-col"
     >
-      <div className="flex items-center justify-center gap-2">
-        <BsStack size={35} />
-        <p className="scale-in-ver-bottom text-center font-montserrat-600 drop-shadow-md max-sm:text-2xl sm:text-2xl md:text-4xl">
-          Tech Stack
+      <div>
+        <div className="flex justify-center items-center gap-2 scale-in-ver-bottom">
+          <BsStack size={35} />
+          <p className="drop-shadow-lg md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-montserrat-600">
+            Tech Stack
+          </p>
+        </div>
+        <p className="drop-shadow-md md:text-lg sm:text-lg max-sm:text-lg text-center font-montserrat-500 scale-in-ver-bottom">
+          *encountered so far...*
         </p>
-      </div>
-      <p className="scale-in-ver-bottom text-center font-montserrat-500 drop-shadow-md max-sm:text-lg sm:text-lg md:text-lg">
-        *encountered so far...*
-      </p>
-      <div className="flex items-center justify-center gap-3 py-4 max-sm:flex-col sm:flex-col md:flex-row">
-        <div
-          className="m-2 grid justify-items-center gap-3 rounded-lg bg-blue-skt_blue_2 
-        px-4 py-5 shadow-lg max-sm:grid-cols-3 sm:grid-cols-3 md:grid-cols-5"
-        >
-          {codingSkills.map(({ id, experiences, icon }) => (
-            <div
-              className="flex transform flex-col items-center justify-center transition-transform hover:scale-105"
-              key={id}
-            >
-              {icon}
-              <p className="select-none text-center font-montserrat-500 max-sm:text-sm sm:text-sm md:text-lg">
-                {experiences}
-              </p>
-            </div>
-          ))}
+        <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
+          <div className="grid md:grid-cols-5 sm:grid-cols-3 max-sm:grid-cols-3 justify-items-center gap-3 bg-blue-400 px-5 py-3 rounded-lg shadow-lg m-2">
+            {codingSkills.map(({ id, experiences, icon }) => (
+              <div
+                className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
+                key={id}
+              >
+                {icon}
+                <p className="select-none text-center font-medium md:text-lg sm:text-sm max-sm:text-sm">
+                  {experiences}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
       <div>
-        <p className="scale-in-ver-bottom text-center font-montserrat-600 text-white drop-shadow-md max-sm:text-2xl sm:text-2xl md:text-4xl">
+        <p className="text-white drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-montserrat-500 scale-in-ver-bottom">
           Development & Design Tools
         </p>
 
-        <div className="flex items-center justify-center gap-3 py-4 max-sm:flex-col sm:flex-col md:flex-row">
-          <div
-            className="m-2 grid justify-items-center gap-3 rounded-lg bg-blue-skt_blue_2 px-4 
-          py-5 shadow-lg max-sm:grid-cols-1 sm:grid-cols-2 md:auto-cols-max md:grid-flow-col"
-          >
+        <div className="flex md:flex-row sm:flex-col max-sm:flex-col justify-center items-center gap-3 py-4">
+          <div className="grid md:grid-flow-col md:auto-cols-max sm:grid-cols-2 max-sm:grid-cols-1 justify-items-center gap-3 bg-blue-400 px-5 py-3 rounded-lg shadow-lg m-2">
             {developmentTools.map(({ id, experiences, icon }) => (
               <div
-                className="flex transform flex-col items-center justify-center transition-transform hover:scale-105"
+                className="flex flex-col justify-center items-center hover:scale-105 transform transition-transform"
                 key={id}
               >
                 {icon}
-                <p className="select-none text-center font-montserrat-500 max-sm:text-sm sm:text-sm md:text-lg">
+                <p className="select-none text-center font-medium md:text-lg sm:text-sm max-sm:text-sm">
                   {experiences}
                 </p>
               </div>

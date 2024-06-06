@@ -22,6 +22,7 @@ module.exports = {
         "montserrat-400": ["var(--font-montserrat-400)"],
         "montserrat-500": ["var(--font-montserrat-500)"],
         "montserrat-600": ["var(--font-montserrat-600)"],
+        roboto: ["var(--font-roboto)"],
       },
     },
   },

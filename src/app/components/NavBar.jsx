@@ -81,29 +81,24 @@ export default function Navbar() {
       }`}
       style={{ zIndex: 1000 }}
     >
-      <a
+      <Link
         href="/"
         className="font-montserrat-400 md:text-2xl sm:text-lg max-sm:text-lg font-bold cursor-pointer"
       >
         @jonathan.dev
-      </a>
+      </Link>
       <ul className="hidden md:flex">
         {links.map(({ id, link, title }) => (
           <li
             key={id}
-            className={`nav-links px-4 py-2 cursor-pointer
+            className={`nav-links px-4 py-2 cursor-pointer drop-shadow-md font-montserrat-600 rounded-md link-underline
              ${
                pathname === link
-                 ? ""
-                 : "hover:scale-105 hover:font-black hover:bg-blue-500 hover:rounded-lg duration-200"
-             }  link-underline`}
+                 ? "bg-blue-200 text-gray-700"
+                 : "text-white hover:scale-105 hover:bg-blue-400 duration-200"
+             }  `}
           >
             <Link
-              className={`${
-                pathname === link
-                  ? "text-gray-700 bg-blue-200 px-4 py-2 rounded-md"
-                  : "text-white"
-              } drop-shadow-md font-montserrat-600`}
               href={link}
               onClick={() => {
                 NProgress.start();

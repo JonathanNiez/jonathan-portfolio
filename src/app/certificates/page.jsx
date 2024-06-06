@@ -8,6 +8,11 @@ import Certificate3 from "../images/certificates/Sweep_Data_Visualization_Part_1
 import Certificate4 from "../images/certificates/Sweep_Data_Visualization_Part_2.png";
 import ResumeWritingCertificate from "../images/certificates/resume_writing_certificate.jpg";
 import CapstoneSpeakerCertificate from "../images/certificates/capstone_speaker_certificate.jpg";
+import CertificateOfCompletion from "../images/certificates/certificate_of_completion.png";
+import COA from "../images/certificates/coa.png";
+import Udemy1 from "../images/certificates/udemy_1.jpg";
+import Udemy2 from "../images/certificates/udemy_2.jpg";
+import Udemy3 from "../images/certificates/udemy_3.jpg";
 
 export default function Certificates() {
   const [zoomStates, setZoomStates] = useState({});
@@ -46,56 +51,113 @@ export default function Certificates() {
     { id: 5, src: ResumeWritingCertificate },
     { id: 6, src: CapstoneSpeakerCertificate },
   ];
+
+  const internshipCertificates = [
+    { id: 7, src: CertificateOfCompletion },
+    { id: 8, src: COA },
+  ];
+
+  const udemyCertificates = [
+    { id: 9, src: Udemy1 },
+    { id: 10, src: Udemy2 },
+    { id: 11, src: Udemy3 },
+  ];
   return (
-    <div className="container mx-auto text-white flex flex-col justify-center items-center gap-3 py-3 px-2 sm:mx-2 max-sm:mx-2">
-      <div className="flex gap-2 justify-center items-center mb-5">
+    <div className="container mx-auto text-white flex flex-col justify-center items-center gap-3 py-4 sm:mx-2 max-sm:mx-2">
+      <div className="flex gap-2 justify-center items-center mb-10 scale-in-ver-bottom">
         <GrCertificate size={35} />
-        <p className="drop-shadow-md md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-montserrat-500 scale-in-ver-bottom">
+        <p className="drop-shadow-lg md:text-4xl sm:text-2xl max-sm:text-2xl text-center font-montserrat-600">
           Certificates
         </p>
       </div>
-      <div className="mb-5">
-        <p className="text-center text-white text-lg font-montserrat-500">
-          Smart SWEEP
-        </p>
-        <div className="grid md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 gap-3 justify-items-center">
-          {smartSweepCertificates.map(({ id, src }) => (
-            <Image
-              key={id}
-              width={0}
-              height={0}
-              onClick={() => zoomImage(id)}
-              className={`${
-                zoomStates[id]
-                  ? "md:w-2/4 sm:w-3/4 max-sm:w-3/4 cursor-zoom-out outline outline-black absolute z-50"
-                  : "w-60 cursor-zoom-in"
-              } outline-black shadow-md rounded-md m-2 hover:scale-105 transform transition-transform`}
-              src={src}
-              alt={`Certificate ${id}`}
-            />
-          ))}
+      <div className="flex flex-col gap-5 justify-center items-center">
+        <div>
+          <p className="text-center text-white text-lg font-montserrat-500 drop-shadow-lg">
+            Smart SWEEP
+          </p>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 gap-3 justify-items-center">
+            {smartSweepCertificates.map(({ id, src }) => (
+              <Image
+                key={id}
+                width={0}
+                height={0}
+                onClick={() => zoomImage(id)}
+                className={`${
+                  zoomStates[id]
+                    ? "md:w-2/4 sm:w-3/4 max-sm:w-3/4 cursor-zoom-out outline outline-black absolute z-50"
+                    : "w-60 cursor-zoom-in"
+                } outline-black shadow-md rounded-md m-2 hover:scale-105 transform transition-transform`}
+                src={src}
+                alt={`Certificate ${id}`}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      <div>
-        <p className="text-center text-white text-lg font-montserrat-500">
-          Holy Cross of Davao College
-        </p>
-        <div className="grid md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 gap-3 justify-items-center">
-          {hcdcCertificates.map(({ id, src }) => (
-            <Image
-              key={id}
-              width={0}
-              height={0}
-              onClick={() => zoomImage(id)}
-              className={`${
-                zoomStates[id]
-                  ? "md:w-2/4 sm:w-3/4 max-sm:w-3/4 cursor-zoom-out outline outline-black absolute z-50"
-                  : "w-60 cursor-zoom-in"
-              } outline-black shadow-md rounded-md m-2 hover:scale-105 transform transition-transform`}
-              src={src}
-              alt={`Certificate ${id}`}
-            />
-          ))}
+        <div>
+          <p className="text-center text-white text-lg font-montserrat-500 drop-shadow-lg">
+            Holy Cross of Davao College
+          </p>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 gap-3 justify-items-center">
+            {hcdcCertificates.map(({ id, src }) => (
+              <Image
+                key={id}
+                width={0}
+                height={0}
+                onClick={() => zoomImage(id)}
+                className={`${
+                  zoomStates[id]
+                    ? "md:w-2/4 sm:w-3/4 max-sm:w-3/4 cursor-zoom-out outline outline-black absolute z-50"
+                    : "w-60 cursor-zoom-in"
+                } outline-black shadow-md rounded-md m-2 hover:scale-105 transform transition-transform`}
+                src={src}
+                alt={`Certificate ${id}`}
+              />
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="text-center text-white text-lg font-montserrat-500 drop-shadow-lg">
+            Internship
+          </p>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 gap-3 justify-items-center">
+            {internshipCertificates.map(({ id, src }) => (
+              <Image
+                key={id}
+                width={0}
+                height={0}
+                onClick={() => zoomImage(id)}
+                className={`${
+                  zoomStates[id]
+                    ? "md:w-2/4 sm:w-3/4 max-sm:w-3/4 cursor-zoom-out outline outline-black absolute z-50"
+                    : "w-60 cursor-zoom-in"
+                } outline-black shadow-md rounded-md m-2 hover:scale-105 transform transition-transform`}
+                src={src}
+                alt={`Certificate ${id}`}
+              />
+            ))}
+          </div>
+        </div>
+        <div>
+          <p className="text-center text-white text-lg font-montserrat-500 drop-shadow-lg">
+            Udemy
+          </p>
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 max-sm:grid-cols-2 gap-3 justify-items-center">
+            {udemyCertificates.map(({ id, src }) => (
+              <Image
+                key={id}
+                width={0}
+                height={0}
+                onClick={() => zoomImage(id)}
+                className={`${
+                  zoomStates[id]
+                    ? "md:w-2/4 sm:w-3/4 max-sm:w-3/4 cursor-zoom-out outline outline-black absolute z-50"
+                    : "w-60 cursor-zoom-in"
+                } outline-black shadow-md rounded-md m-2 hover:scale-105 transform transition-transform`}
+                src={src}
+                alt={`Certificate ${id}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
