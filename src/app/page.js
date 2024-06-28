@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
 import TPoseJonathan from "./images/T.png";
 import Jonathan from "./images/me_capstone.png";
@@ -43,7 +42,8 @@ export default function Overview() {
       >
         <Image
           className="md:w-[300px] sm:w-40 max-sm:w-40 rounded-full drop-shadow-md"
-          src={Jonathan}
+          src={require("./images/Hehe.jpg")}
+          alt="Jonathan A. Niez Jr."
         />
 
         <div>
@@ -61,15 +61,28 @@ export default function Overview() {
                 Full-stack Developer
               </p>
             </div>
-            <div className="flex md:flex-row sm:flex-col max-sm:flex-col">
-              <Link
-                target="_blank"
-                href="https://www.canva.com/design/DAF7B-KH188/NbzJ9iRlrbjDYlj4um4Shg/edit?utm_content=DAF7B-KH188&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            <Link
+              // target="_blank"
+              // href="https://www.canva.com/design/DAF7B-KH188/NbzJ9iRlrbjDYlj4um4Shg/edit?utm_content=DAF7B-KH188&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+              href="/resume"
+              className="flex flex-row justify-center items-center gap-1 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            >
+              <p>View Resume</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
               >
-                View CV
-              </Link>
-            </div>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z"
+                />
+              </svg>
+            </Link>
             <div className="flex flex-row justify-center items-center bg-cyan-200 py-2 px-4 rounded-full shadow-md gap-3">
               <a
                 className="transition-transform hover:scale-110"
