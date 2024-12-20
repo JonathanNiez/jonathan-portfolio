@@ -17,10 +17,10 @@ export default function Projects() {
       id: 1,
       children: (
         <>
-          <h3 class="flex items-center text-lg font-montserrat-500">
+          <h3 className="flex items-center text-lg font-montserrat-500">
             Random Password Generator using Python
           </h3>
-          <p class="mb-2 text-md text-wrap font-montserrat-400 leading-none">
+          <p className="mb-2 text-md text-wrap font-montserrat-400 leading-none">
             A very simple and easy random password generator using Python that
             is good for beginners.
           </p>
@@ -32,10 +32,10 @@ export default function Projects() {
       id: 2,
       children: (
         <>
-          <h3 class="flex items-center text-lg font-montserrat-500 gap-2">
+          <h3 className="flex items-center text-lg font-montserrat-500 gap-2">
             Online Shopping App
           </h3>
-          <p class=" mb-2 text-md text-wrap font-montserrat-400 leading-none">
+          <p className=" mb-2 text-md text-wrap font-montserrat-400 leading-none">
             A simple E-commerce mobile app with easy to use UI and with chat
             feature.
           </p>
@@ -51,10 +51,10 @@ export default function Projects() {
       id: 3,
       children: (
         <>
-          <h3 class="flex items-center text-lg font-montserrat-500">
+          <h3 className="flex items-center text-lg font-montserrat-500">
             CareCabs
           </h3>
-          <p class="mb-2 text-md text-wrap font-montserrat-400 leading-none">
+          <p className="mb-2 text-md text-wrap font-montserrat-400 leading-none">
             A mobile app Capstone project that lessens the burden of Senior
             Citizens and PWDs for their daily transportation problems. This app
             features a user-friendly UI with accessibility settings, ID scanning
@@ -75,10 +75,10 @@ export default function Projects() {
       id: 4,
       children: (
         <>
-          <h3 class="flex items-center text-lg font-montserrat-500">
+          <h3 className="flex items-center text-lg font-montserrat-500">
             CareCabs Admin
           </h3>
-          <p class="mb-2 text-md text-wrap font-montserrat-400 leading-none">
+          <p className="mb-2 text-md text-wrap font-montserrat-400 leading-none">
             The Admin side of the CareCabs mobile app that can manage the
             drivers and the users of the app.
           </p>
@@ -93,10 +93,10 @@ export default function Projects() {
       id: 5,
       children: (
         <>
-          <h3 class="flex items-center mb-1 text-lg font-montserrat-500">
+          <h3 className="flex items-center mb-1 text-lg font-montserrat-500">
             Dormitory Management App using Blazor
           </h3>
-          <p class="block mb-2 text-sm font-montserrat-400 leading-none">
+          <p className="block mb-2 text-sm font-montserrat-400 leading-none">
             A basic and simple dormitory management application using Blazor
             with user-friendly UI.
           </p>
@@ -111,10 +111,10 @@ export default function Projects() {
       id: 6,
       children: (
         <>
-          <h3 class="flex items-center mb-1 text-lg font-montserrat-500">
+          <h3 className="flex items-center mb-1 text-lg font-montserrat-500">
             Payroll Management System Mobile App
           </h3>
-          <p class="block mb-2 text-sm font-montserrat-400 leading-none">
+          <p className="block mb-2 text-sm font-montserrat-400 leading-none">
             A mobile application that can manage the payroll of the employees
             using React Native and Laravel as the backend.
           </p>
