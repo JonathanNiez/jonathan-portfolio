@@ -31,6 +31,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsStack } from "react-icons/bs";
 import { FaLaravel } from "react-icons/fa6";
 import { FaVuejs } from "react-icons/fa6";
+import { SiDart } from "react-icons/si";
 
 export default function TechStack() {
   useEffect(() => {
@@ -160,8 +161,13 @@ export default function TechStack() {
     },
     {
       id: 25,
-      experiences: " Vue",
+      experiences: "Vue",
       icon: <FaVuejs size={35} />,
+    },
+    {
+      id: 26,
+      experiences: "Dart",
+      icon: <SiDart size={35} />,
     },
   ];
 

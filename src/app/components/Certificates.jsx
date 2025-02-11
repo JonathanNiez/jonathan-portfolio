@@ -1,9 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import Certificate1 from "../images/certificates/Sweep_Network_on_Cloud.png";
-import Certificate2 from "../images/certificates/Sweep_The_Agile_Mindset.png";
-import Certificate3 from "../images/certificates/Sweep_Data_Visualization_Part_1.png";
-import Certificate4 from "../images/certificates/Sweep_Data_Visualization_Part_2.png";
 
 export default function Certificates() {
   const [zoomStates, setZoomStates] = useState({});
@@ -18,19 +14,19 @@ export default function Certificates() {
   const certificates = [
     {
       id: 1,
-      src: Certificate1,
+      src: "../images/certificates/Sweep_Network_on_Cloud.png",
     },
     {
       id: 2,
-      src: Certificate2,
+      src: "../images/certificates/Sweep_The_Agile_Mindset.png",
     },
     {
       id: 3,
-      src: Certificate3,
+      src: "../images/certificates/Sweep_Data_Visualization_Part_1.png",
     },
     {
       id: 4,
-      src: Certificate4,
+      src: "../images/certificates/Sweep_Data_Visualization_Part_2.png",
     },
   ];
   return (
