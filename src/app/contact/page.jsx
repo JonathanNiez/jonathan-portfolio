@@ -15,7 +15,7 @@ export default function Contact() {
         </p>
         <div className="flex flex-row items-center justify-center gap-4">
           <a
-            href="https://www.facebook.com/mr.smoothy13"
+            href="https://www.facebook.com/jonathan.niez69"
             target="_blank"
             className="font-medium hover:scale-105 transform transition-transform drop-shadow-md"
           >
