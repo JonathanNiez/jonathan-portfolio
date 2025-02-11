@@ -58,7 +58,7 @@ export default function Overview() {
                 alt="Philippines Flag"
               />
               <p className="font-montserrat-500 md:text-xl sm:text-md max-sm:text-md">
-                Full-stack Developer
+                Full-Stack Developer
               </p>
             </div>
             <Link
