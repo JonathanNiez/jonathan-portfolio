@@ -32,6 +32,8 @@ import { BsStack } from "react-icons/bs";
 import { FaLaravel } from "react-icons/fa6";
 import { FaVuejs } from "react-icons/fa6";
 import { SiDart } from "react-icons/si";
+import { BiLogoVisualStudio } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
 
 export default function TechStack() {
   useEffect(() => {
@@ -91,68 +93,68 @@ export default function TechStack() {
     },
     {
       id: 11,
+      experiences: "MySQL",
+      icon: <SiMysql size={35} />,
+    },
+    {
+      id: 12,
       experiences: "Tailwind CSS",
       icon: <SiTailwindcss size={35} />,
     },
     {
-      id: 12,
+      id: 13,
       experiences: "Bootstrap",
       icon: <FaBootstrap size={35} />,
     },
     {
-      id: 13,
+      id: 14,
       experiences: "Android",
       icon: <IoLogoAndroid size={35} />,
     },
     {
-      id: 14,
+      id: 15,
       experiences: "ReactJS",
       icon: <FaReact size={35} />,
     },
     {
-      id: 15,
+      id: 16,
       experiences: "NextJS",
       icon: <TbBrandNextjs size={35} />,
     },
     {
-      id: 16,
+      id: 17,
       experiences: "Svelte",
       icon: <SiSvelte size={35} />,
     },
     {
-      id: 17,
+      id: 18,
       experiences: "Blazor",
       icon: <SiBlazor size={35} />,
     },
     {
-      id: 18,
+      id: 19,
       experiences: "React Native",
       icon: <TbBrandReactNative size={35} />,
     },
     {
-      id: 19,
+      id: 20,
       experiences: "Git",
       icon: <FaGitAlt size={35} />,
     },
     {
-      id: 20,
+      id: 21,
       experiences: "Github",
       icon: <FaGithub size={35} />,
     },
     {
-      id: 21,
+      id: 22,
       experiences: "Firebase",
       icon: <IoLogoFirebase size={35} />,
     },
     {
-      id: 22,
+      id: 23,
       experiences: "Django",
       icon: <DiDjango size={35} />,
-    },
-    {
-      id: 23,
-      experiences: "Android Studio",
-      icon: <SiAndroidstudio size={35} />,
     },
     {
       id: 24,
@@ -174,16 +176,26 @@ export default function TechStack() {
   const developmentTools = [
     {
       id: 1,
+      experiences: "Visual Studio Code",
+      icon: <BiLogoVisualStudio size={35} />,
+    },
+    {
+      id: 2,
+      experiences: "Android Studio",
+      icon: <SiAndroidstudio size={35} />,
+    },
+    {
+      id: 3,
       experiences: "Photoshop",
       icon: <SiAdobephotoshop size={35} />,
     },
     {
-      id: 2,
+      id: 4,
       experiences: "Premiere Pro",
       icon: <SiAdobepremierepro size={35} />,
     },
     {
-      id: 3,
+      id: 5,
       experiences: "Figma",
       icon: <FaFigma size={35} />,
     },
