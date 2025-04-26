@@ -18,7 +18,7 @@ export default function Contact() {
         </svg>
       </a>
       <a
-        href="https://www.facebook.com/mr.smoothy13"
+        href="https://www.facebook.com/jonathan.niez69"
         target="_blank"
         className="relative left-[-60%] hover:left-0 flex flex-row justify-between items-center cursor-pointer gap-1 font-montserrat-500 bg-blue-500 py-2 px-4 text-white transition-all duration-200 ease-in-out"
       >
