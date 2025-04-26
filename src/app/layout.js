@@ -1,14 +1,10 @@
 import "./globals.css";
 import "./background.scss";
 import { Inter, Montserrat, Roboto } from "next/font/google";
+import ProgressBar from "./components/ProgressBar";
 import Navbar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 import Contact from "./components/Contact";
-
-export const metadata = {
-  title: "Jonathan A. Niez Jr.",
-  description: "Portfolio",
-};
 
 const inter = Inter({
   subsets: ["latin"],
@@ -53,6 +49,12 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
+export const metadata = {
+  title: "Jonathan A. Niez Jr. | Portfolio",
+  description:
+    "Portfolio of Jonathan A. Niez Jr., showcasing projects, education, and skills.",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
@@ -64,6 +66,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="favicon.ico" sizes="any" />
       </head>
       <body className="flex flex-col min-h-screen">
+        <ProgressBar />
         <Navbar />
         <Contact />
         <div className="container mx-auto flex flex-col md:px-24 sm:px-10 max-sm:px-10 flex-grow">

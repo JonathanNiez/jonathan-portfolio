@@ -84,7 +84,7 @@ export default function Navbar() {
     >
       <Link
         href="/"
-        className="font-montserrat-400 md:text-2xl sm:text-lg max-sm:text-lg font-bold cursor-pointer"
+        className="font-montserrat-400 md:text-2xl sm:text-lg max-sm:text-lg font-bold cursor-pointer hover:scale-110 duration-200 drop-shadow-md"
       >
         @jonathan.dev
       </Link>

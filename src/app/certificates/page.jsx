@@ -13,6 +13,9 @@ import COA from "../images/certificates/coa.png";
 import Udemy1 from "../images/certificates/udemy_1.jpg";
 import Udemy2 from "../images/certificates/udemy_2.jpg";
 import Udemy3 from "../images/certificates/udemy_3.jpg";
+import UdemyDart from "../images/certificates/udemy-dart.jpg";
+import UdemyCyberSec1 from "../images/certificates/udemy-cybersec1.jpg";
+import UdemyCyberSec2 from "../images/certificates/udemy-cybersec2.jpg";
 
 export default function Certificates() {
   const [zoomStates, setZoomStates] = useState({});
@@ -22,12 +25,15 @@ export default function Certificates() {
   }, []);
 
   const zoomImage = (id) => {
-    setZoomStates((prevZoomStates) => ({
-      ...prevZoomStates,
-      [id]: !prevZoomStates[id],
-    }));
+    setZoomStates((prevZoomStates) => {
+      // If the clicked image is already zoomed, reset all zoom states
+      if (prevZoomStates[id]) {
+        return {};
+      }
+      // Otherwise, zoom only the clicked image
+      return { [id]: true };
+    });
   };
-
   const smartSweepCertificates = [
     {
       id: 1,
@@ -61,6 +67,9 @@ export default function Certificates() {
     { id: 9, src: Udemy1 },
     { id: 10, src: Udemy2 },
     { id: 11, src: Udemy3 },
+    { id: 12, src: UdemyDart },
+    { id: 13, src: UdemyCyberSec1 },
+    { id: 14, src: UdemyCyberSec2 },
   ];
   return (
     <div className="container mx-auto text-white flex flex-col justify-center items-center gap-3 py-4 sm:mx-2 max-sm:mx-2">
