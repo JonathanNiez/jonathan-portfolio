@@ -12,6 +12,10 @@ import { SiCsharp } from "react-icons/si";
 import { FaReact } from "react-icons/fa6";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FaLaravel } from "react-icons/fa";
+import { FaLock } from "react-icons/fa";
+import { FaEye } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiTailwindcss } from "react-icons/si";
 
 export default function App() {
   useEffect(() => {
@@ -21,115 +25,106 @@ export default function App() {
   const projects = [
     {
       id: 1,
-      children: (
-        <>
-          <h3 className="flex items-center text-lg font-montserrat-500">
-            Random Password Generator using Python
-          </h3>
-          <p className="mb-2 text-md text-wrap font-montserrat-400 leading-none">
-            A very simple and easy random password generator using Python that
-            is good for beginners.
-          </p>
-          <FaPython size={35} />
-        </>
-      ),
+      isPublic: true,
+      repoLink: "https://github.com/JonathanNiez/Python-Password-Generator.git",
+      title: "Random Password Generator using Python",
+      description:
+        "A simple and easy random password generator using Python that is good for beginners.",
+      icon: <FaPython size={35} />,
     },
     {
       id: 2,
-      children: (
+      isPublic: true,
+      repoLink: "https://github.com/JonathanNiez/CC106-Project.git",
+      title: "Android Online Shopping App",
+      description:
+        "A simple E-commerce mobile app with easy-to-use UI and chat feature.",
+      icon: (
         <>
-          <h3 className="flex items-center text-lg font-montserrat-500 gap-2">
-            Online Shopping App
-          </h3>
-          <p className=" mb-2 text-md text-wrap font-montserrat-400 leading-none">
-            A simple E-commerce mobile app with easy to use UI and with chat
-            feature.
-          </p>
-          <div className="flex gap-2">
-            <FaJava size={35} />
-            <SiAndroidstudio size={35} />
-            <FaAndroid size={35} />
-          </div>
+          <FaJava size={35} />
+          <SiAndroidstudio size={35} />
+          <FaAndroid size={35} />
         </>
       ),
     },
     {
       id: 3,
-      children: (
+      isPublic: false,
+      repoLink: null,
+      title: "Capstone Project: CareCabs",
+      description:
+        "A Capstone project that lessens the burden of Senior Citizens and PWDs for their daily transportation problems. This app features a user-friendly UI with accessibility settings, ID scanning , and Map using Mapbox.",
+      icon: (
         <>
-          <h3 className="flex items-center text-lg font-montserrat-500">
-            CareCabs
-          </h3>
-          <p className="mb-2 text-md text-wrap font-montserrat-400 leading-none">
-            A mobile app Capstone project that lessens the burden of Senior
-            Citizens and PWDs for their daily transportation problems. This app
-            features a user-friendly UI with accessibility settings, ID scanning
-            and Map using Mapbox.
-          </p>
-          <div className="flex gap-2">
-            <FaAndroid size={35} />
-            <SiAndroidstudio size={35} />
-            <FaJava size={35} />
-            <TbBrandKotlin size={35} />
-            <SiMapbox size={35} />
-            <SiFirebase size={35} />
-          </div>
+          <FaAndroid size={35} />
+          <SiAndroidstudio size={35} />
+          <FaJava size={35} />
+          <TbBrandKotlin size={35} />
+          <SiMapbox size={35} />
+          <SiFirebase size={35} />
         </>
       ),
     },
     {
       id: 4,
-      children: (
+      isPublic: false,
+      repoLink: null,
+      title: "Capstone Project: CareCabs Admin",
+      description:
+        "The web version Admin side of the CareCabs mobile app can manage the drivers and the users of the app.",
+      icon: (
         <>
-          <h3 className="flex items-center text-lg font-montserrat-500">
-            CareCabs Admin
-          </h3>
-          <p className="mb-2 text-md text-wrap font-montserrat-400 leading-none">
-            The Admin side of the CareCabs mobile app that can manage the
-            drivers and the users of the app.
-          </p>
-          <div className="flex gap-2">
-            <FaReact size={35} />
-            <SiFirebase size={35} />
-          </div>
+          <FaReact size={35} />
+          <SiFirebase size={35} />
+          <SiTailwindcss size={35} />
         </>
       ),
     },
     {
       id: 5,
-      children: (
+      isPublic: true,
+      repoLink: "https://github.com/JonathanNiez/ADV104-Project.git",
+      title: "Dormitory Management App using Blazor",
+      description:
+        "A basic and simple dormitory management application using Blazor with user-friendly UI.",
+      icon: (
         <>
-          <h3 className="flex items-center mb-1 text-lg font-montserrat-500">
-            Dormitory Management App using Blazor
-          </h3>
-          <p className="block mb-2 text-sm font-montserrat-400 leading-none">
-            A basic and simple dormitory management application using Blazor
-            with user-friendly UI.
-          </p>
-          <div className="flex gap-2">
-            <SiCsharp size={35} />
-            <SiBlazor size={35} />
-          </div>
+          <SiCsharp size={35} />
+          <SiBlazor size={35} />
         </>
       ),
     },
     {
       id: 6,
-      children: (
+      isPublic: false,
+      repoLink: null,
+      title: "Payroll Management System Mobile App",
+      description:
+        "An internship project mobile application that can manage the payroll of employees using React Native and Laravel as the backend.",
+      icon: (
         <>
-          <h3 className="flex items-center mb-1 text-lg font-montserrat-500">
-            Payroll Management System Mobile App
-          </h3>
-          <p className="block mb-2 text-sm font-montserrat-400 leading-none">
-            A mobile application that can manage the payroll of the employees
-            using React Native and Laravel as the backend.
-          </p>
-          <div className="flex gap-2">
-            <TbBrandReactNative size={35} />
-            <FaLaravel size={35} />
-          </div>
+          <TbBrandReactNative size={35} />
+          <FaLaravel size={35} />
         </>
       ),
+    },
+    {
+      id: 7,
+      isPublic: true,
+      repoLink:
+        "https://github.com/JonathanNiez/WS101---NextJS-To-Do-List-App.git",
+      title: "To Do List App using NextJS",
+      description:
+        "A simple To Do List App using NextJS with user-friendly UI.",
+      icon: <TbBrandNextjs size={35} />,
+    },
+    {
+      id: 8,
+      isPublic: true,
+      repoLink: "https://github.com/JonathanNiez/shape-drawer.git",
+      title: "Shape Drawer using ReactJS",
+      description: "A simple shape drawer using ReactJS with user-friendly UI.",
+      icon: <FaReact size={35} />,
     },
   ];
 
@@ -144,10 +139,38 @@ export default function App() {
       <div className="grid md:grid-cols-3 sm:grid-cols-1 max-sm:grid-cols-1 gap-4 ">
         {projects.map((project) => (
           <div
-            className="text-white bg-cyan-500 p-3 rounded-md shadow-md hover:scale-105 hover:bg-cyan-200 hover:text-gray-800 duration-200 "
+            className="flex flex-col text-white bg-cyan-500 p-3 gap-2 rounded-md shadow-md hover:scale-105 hover:bg-cyan-200 hover:text-gray-800 duration-200"
             key={project.id}
           >
-            {project.children}
+            <h3 className="flex items-center text-lg font-montserrat-500">
+              {project.title}
+            </h3>
+            <p className="mb-2 text-md text-wrap font-montserrat-400 leading-none">
+              {project.description}
+            </p>
+            <div className="flex gap-2">{project.icon}</div>
+            <div className="flex justify-center items-center mt-2">
+              {project.isPublic ? (
+                <div className="flex gap-2 items-center p-2 rounded-md bg-slate-50 ">
+                  <FaEye size={20} color="black" />
+                  <a
+                    href={project.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-montserrat-500 text-gray-800 hover:text-gray-600 cursor-pointer"
+                  >
+                    View Repository
+                  </a>
+                </div>
+              ) : (
+                <div className="flex gap-2 items-center p-2 rounded-md bg-slate-50 cursor-not-allowed">
+                  <FaLock size={20} color="black" />
+                  <p className="text-sm font-montserrat-500 text-red-700">
+                    Private Repository
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>

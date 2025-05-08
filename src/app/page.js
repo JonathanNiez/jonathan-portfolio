@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useEffect } from "react";
 import UnityLogo from "./images/unity_logo.png";
 import GodotLogo from "./images/godot_logo.png";
 import RenPyLogo from "./images/renpy_logo.png";
@@ -12,6 +13,10 @@ import TechStack from "./techStack/page";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Overview() {
+  useEffect(() => {
+    document.title = "Jonathan A. Niez Jr. | Overview";
+  }, []);
+
   const getAge = (birthDate) => {
     const today = new Date();
     const birth = new Date(birthDate);
