@@ -11,7 +11,6 @@ import Education from "./education/page";
 import Projects from "./projects/page";
 import TechStack from "./techStack/page";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { FaFileImage } from "react-icons/fa";
 import { ImSpinner11 } from "react-icons/im";
 
 export default function Overview() {
@@ -38,12 +37,12 @@ export default function Overview() {
   const age = getAge("2002-02-09");
 
   const mePics = {
-    1: require("./images/Hehe.jpg"),
-    2: require("./images/me1.JPG"),
-    3: require("./images/me2.JPG"),
-    4: require("./images/me3.JPG"),
-    5: require("./images/me4.JPG"),
-    6: require("./images/me5.JPG"),
+    1: "./images/Hehe.jpg",
+    2: "./images/me1.jpg",
+    3: "./images/me2.jpg",
+    4: "./images/me3.jpg",
+    5: "./images/me4.jpg",
+    6: "./images/me5.jpg",
   };
   const [currentImage, setCurrentImage] = useState(mePics[2]);
 
@@ -72,7 +71,7 @@ export default function Overview() {
           <Image
             id="profile-image"
             className="w-96 rounded-3xl drop-shadow-md transition-all duration-500 ease-in-out"
-            src={currentImage}
+            src={require(`${currentImage}`)}
             alt="Jonathan A. Niez Jr."
             key={currentImage}
           />

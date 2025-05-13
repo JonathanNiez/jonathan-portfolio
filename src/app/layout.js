@@ -49,12 +49,6 @@ const roboto = Roboto({
   variable: "--font-roboto",
 });
 
-export const metadata = {
-  title: "Jonathan A. Niez Jr. | Portfolio",
-  description:
-    "Portfolio of Jonathan A. Niez Jr., showcasing projects, education, and skills.",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html
