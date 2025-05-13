@@ -26,14 +26,14 @@ export default function Certificates() {
 
   const zoomImage = (id) => {
     setZoomStates((prevZoomStates) => {
-      // If the clicked image is already zoomed, reset all zoom states
       if (prevZoomStates[id]) {
         return {};
       }
-      // Otherwise, zoom only the clicked image
+
       return { [id]: true };
     });
   };
+
   const smartSweepCertificates = [
     {
       id: 1,

@@ -203,7 +203,7 @@ export default function TechStack() {
 
   return (
     <div
-      className="container flex items-center justify-center gap-3 py-4 text-white
+      className="flex items-center justify-center gap-3 py-4 text-white
      max-sm:flex-col sm:flex-col md:flex-col"
     >
       <div>
