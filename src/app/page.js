@@ -46,7 +46,6 @@ export default function Overview() {
     6: require("./images/me5.JPG"),
   };
   const [currentImage, setCurrentImage] = useState(mePics[2]);
-  const [isImageZoomed, setIsZoomZoomed] = useState(false);
 
   const changeImage = () => {
     const imageElement = document.getElementById("profile-image");
