@@ -12,6 +12,7 @@ import Projects from "./projects/page";
 import TechStack from "./techStack/page";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { ImSpinner11 } from "react-icons/im";
+import { Carousel } from "react-responsive-carousel";
 
 export default function Overview() {
   useEffect(() => {
@@ -36,29 +37,7 @@ export default function Overview() {
 
   const age = getAge("2002-02-09");
 
-  const mePics = {
-    1: "./images/Hehe.jpg",
-    2: "./images/me1.jpg",
-    3: "./images/me2.jpg",
-    4: "./images/me3.jpg",
-    5: "./images/me4.jpg",
-    6: "./images/me5.jpg",
-  };
-  const [currentImage, setCurrentImage] = useState(mePics[2]);
-
-  const changeImage = () => {
-    const imageElement = document.getElementById("profile-image");
-    imageElement.classList.add("opacity-0");
-
-    setTimeout(() => {
-      const nextImageKey =
-        (Object.keys(mePics).find((key) => mePics[key] === currentImage) %
-          Object.keys(mePics).length) +
-        1;
-      setCurrentImage(mePics[nextImageKey]);
-      imageElement.classList.remove("opacity-0");
-    }, 300);
-  };
+  let imageAlt = "Jonathan A. Niez Jr.";
 
   return (
     <div id="#">
@@ -67,24 +46,61 @@ export default function Overview() {
       sm:items-center max-sm:justify-center max-sm:items-center sm:flex-col max-sm:flex-col
        bg-black bg-opacity-50 my-5 h-auto py-4 px-2 rounded-lg shadow-lg slide-in-top"
       >
-        <div className="lg:w-[25%] sm:w-40 max-sm:w-40 flex flex-col justify-center items-center gap-2">
-          <Image
-            id="profile-image"
-            className="w-96 rounded-3xl drop-shadow-md transition-all duration-500 ease-in-out"
-            src={require(`${currentImage}`)}
-            alt="Jonathan A. Niez Jr."
-            key={currentImage}
-          />
-
-          <button
-            className="bg-gray-300 p-2 rounded-md shadow-md cursor-pointer hover:bg-gray-200 transition duration-300 ease-in-out"
-            onClick={changeImage}
+        <div className="lg:w-[35%] sm:w-40 max-sm:w-40 flex flex-col justify-center items-center gap-2">
+          <Carousel
+            autoPlay={true}
+            showArrows={true}
+            swipeable={true}
+            showStatus={false}
+            interval={3000}
+            infiniteLoop={true}
           >
-            <ImSpinner11 size={35} />
-          </button>
+            <div>
+              <Image
+                className="rounded-md shadow-md w-full"
+                src={require("./images/me1.jpg")}
+                alt={imageAlt}
+              />
+            </div>
+            <div>
+              <Image
+                className="rounded-md shadow-md w-full"
+                src={require("./images/me2.jpg")}
+                alt={imageAlt}
+              />
+            </div>
+            <div>
+              <Image
+                className="rounded-md shadow-md w-full"
+                src={require("./images/me3.jpg")}
+                alt={imageAlt}
+              />
+            </div>
+            <div>
+              <Image
+                className="rounded-md shadow-md w-full"
+                src={require("./images/me4.jpg")}
+                alt={imageAlt}
+              />
+            </div>
+            <div>
+              <Image
+                className="rounded-md shadow-md w-full"
+                src={require("./images/me5.jpg")}
+                alt={imageAlt}
+              />
+            </div>
+            <div>
+              <Image
+                className="rounded-md shadow-md w-full"
+                src={require("./images/Hehe.jpg")}
+                alt={`${imageAlt} Red Eyes`}
+              />
+            </div>
+          </Carousel>
         </div>
 
-        <div className="lg:w-[75%] flex flex-col justify-center items-center gap-2 text-white">
+        <div className="lg:w-[65%] flex flex-col justify-center items-center gap-2 text-white">
           <p className="font-montserrat-600 md:text-5xl sm:text-2xl max-sm:text-2xl">
             Jonathan A. Niez Jr.
           </p>
@@ -230,10 +246,7 @@ export default function Overview() {
             </a>
           </div>
           <div className="flex flex-col gap-2 py-2 px-3 text-white">
-            <p className="font-montserrat-600 slide-in-right text-3xl md:text-2xl sm:text-xl max-sm:text-xl">
-              Hola! I'm Jonathan.
-            </p>
-            <p className="font-montserrat-400 slide-in-left text-wrap md:text-lg sm:text-sm max-sm:text-sm">
+            <p className="font-montserrat-400 slide-in-left text-wrap md:text-xl sm:text-sm max-sm:text-sm">
               Hi! I'm Jonathan, a {age}-year-old Full-Stack Developer with
               experience building websites and Android applications. I
               specialize in both front-end and back-end development and am
@@ -243,7 +256,7 @@ export default function Overview() {
               eager to learn new frameworks or languages to grow in the tech
               industry.
             </p>
-            <p className="font-montserrat-400 slide-in-left text-wrap md:text-lg sm:text-sm max-sm:text-sm">
+            <p className="font-montserrat-400 slide-in-left text-wrap md:text-xl sm:text-sm max-sm:text-sm">
               I am adaptable, flexible, and always willing to learn new
               programming languages or frameworks to expand my knowledge.
             </p>
