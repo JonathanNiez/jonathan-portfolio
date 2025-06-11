@@ -77,7 +77,7 @@ export default function Contact() {
         </svg>
       </a>
       <a
-        href="https://wa.me/09068001245"
+        href="https://wa.me/639068001245"
         target="_blank"
         className="relative left-[-60%] hover:left-0 flex flex-row justify-between items-center cursor-pointer gap-1 font-montserrat-500 bg-lime-500 py-2 px-4 text-white transition-all duration-200 ease-in-out"
       >
